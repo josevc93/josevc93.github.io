@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /tags/
-title: "Posts by Tags"
+title: "Clasificados"
 author_profile: true
 ---
 
