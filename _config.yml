@@ -64,7 +64,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "José Manuel Vázquez"
-  avatar           : "bio-photo.jpg"
+  avatar           : 'http://www.fernandoperdices.net/wordpress/wp-content/uploads/2012/09/fernandofernandezperdices_png_89-14.jpg' #"bio-photo.jpg"
   bio              : "Blog de informática..."
   location         : "España"
   email            :
