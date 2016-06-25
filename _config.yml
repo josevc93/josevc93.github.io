@@ -64,7 +64,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "José Manuel Vázquez"
-  avatar           : 'uno.jpg' #"bio-photo.jpg"
+  avatar           : 'dos.jpg' #"bio-photo.jpg"
   bio              : "Blog de informática..."
   location         : "España"
   email            :
