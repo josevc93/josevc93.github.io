@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Site Title"
+title                    : "Blog"
 title_separator          : "-"
 name                     : "Your Name"
 description              : "An amazing website."
@@ -63,10 +63,10 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "José Manuel Vázquez"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Blog de informática..."
+  location         : "España"
   email            :
   uri              :
   bitbucket        :
@@ -86,7 +86,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : josevc93
   vine             :
   weibo            :
   xing             :
