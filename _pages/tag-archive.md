@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /tags/
-title: "Clasificados"
+title: "Categorías"
 author_profile: true
 ---
 
