@@ -1,7 +1,4 @@
 ---
-tags:
-- jekyll
-- github
 category: github
 ---
 
