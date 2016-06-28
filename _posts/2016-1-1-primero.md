@@ -1,5 +1,7 @@
 ---
-categories: Github
+categories: 
+- Jose
+- Jesus
 tags:
 - Jekyll
 - Github
