@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /tags/
-title: "Categorías"
+title: "Tags"
 author_profile: true
 ---
 
