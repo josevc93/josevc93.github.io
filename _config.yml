@@ -11,7 +11,7 @@ title                    : "Blog informática"
 title_separator          : "-"
 name                     : "José Manuel Vázquez"
 description              : "Blog de informática. Especialmente dedicado a la programación web."
-url                      : "https://www.josemanuelvazquez.es"
+url                      : "https://josevc93.github.io"
 baseurl                  : #
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
