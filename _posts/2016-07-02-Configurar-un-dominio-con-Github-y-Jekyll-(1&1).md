@@ -39,7 +39,11 @@ Dentro de GitHub debemos crear un archivo CNAME en el cuál únicamente hay que 
 
 ## Propagación de DNS
 
-Aunque ya está todo configurado aún no es posible acceder al nuevo dominio.
+Aunque ya está todo configurado aún no es posible acceder al nuevo dominio. Esto se debe a que cuando se produce un cambio en un dominio, esta nueva información debe propagarse a todos los servidores DNS del planeta. Suele tardar entre **24-48 horas**. ¿Por qué? Hay que esperar que expire la entrada en caché (el TTL generalmente tiene un valor de 48 horas) para que, cuando esos servidores reciban una consulta de un cliente, se vea obligados a contactar con el servidor DNS autoritario. El servidor DNS autoritario responderá con los datos actualizados.
+
+Podemos comprobar como va la propagación de DNS en la siguiente página:
+
+[whatsmydns]: https://www.whatsmydns.net/
 
 
 
