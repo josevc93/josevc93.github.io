@@ -43,7 +43,7 @@ Aunque ya está todo configurado aún no es posible acceder al nuevo dominio. Es
 
 Podemos comprobar como va la propagación de DNS en la siguiente página:
 
-https://www.whatsmydns.net/
+<https://www.whatsmydns.net/>
 
 
 
