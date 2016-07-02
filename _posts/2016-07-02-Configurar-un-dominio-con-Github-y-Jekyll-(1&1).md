@@ -21,9 +21,11 @@ Una vez comprado se te enviará un correo con tu ID de cliente (puede tardar uno
 
 ![Acceso 1&1]({{ site.baseurl }}/images/configurar-dominio-01.jpg "Acceso 1&1")
 
-Ya es posible editar nuestro dominio, para ello accede a Mis Productos -> Dominios -> Gestionar Dominios. Es posible que no te permita configurarlo, en ese caso únicamente debes esperar hasta que sea posible (tarda unos minutos). Seguidamente creamos un subdominio (recomiendo www o blog).
+Ya es posible editar nuestro dominio, para ello accede a Mis *Productos -> Dominios -> Gestionar Dominios*. Es posible que no te permita configurarlo, en ese caso únicamente debes esperar hasta que sea posible (tarda unos minutos). Seguidamente creamos un subdominio (recomiendo *www* o *blog*).
 
 ![Crear subdominio]({{ site.baseurl }}/images/configurar-dominio-02.jpg "Crear subdominio")
+
+Una vez creado seleccionamos *Administrar Subdominios -> Modificar configuración DNS*.
 
 
 
