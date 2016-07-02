@@ -17,7 +17,7 @@ Si te decides por esta web, únicamente debes de comprobar si el dominio que bus
 
 ## Configurar el dominio
 
-Una vez comprado se te enviará un correo con tu ID de cliente (puede tardar unos minutos). Con esto puedes acceder al área de cliente para configurar tu dominio, aunque también puedes acceder introduciendo tu dominio.
+Una vez comprado se te enviará un correo con tu ID de cliente (puede tardar unos minutos). Con esto puedes acceder al área de clientes, aunque también puedes acceder introduciendo tu dominio.
 
 ![Acceso 1&1]({{ site.baseurl }}/images/configurar-dominio-01.jpg "Acceso 1&1")
 
