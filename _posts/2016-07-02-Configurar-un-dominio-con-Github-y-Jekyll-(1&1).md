@@ -31,13 +31,13 @@ Una vez creado seleccionamos *Administrar Subdominios -> Modificar configuració
 
 Esto es todo lo que debemos de configurar en 1&1.
 
-##Archivo CNAME
+## Archivo CNAME
 
 Dentro de GitHub debemos crear un archivo CNAME en el cuál únicamente hay que incluir el dominio que acabamos de crear.
 
 ![CNAME]({{ site.baseurl }}/images/configurar-dominio-04.jpg "CNAME")
 
-##Propagación de DNS
+## Propagación de DNS
 
 Aunque ya está todo configurado aún no es posible acceder al nuevo dominio.
 
