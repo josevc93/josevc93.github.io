@@ -21,6 +21,10 @@ Una vez comprado se te enviará un correo con tu ID de cliente (puede tardar uno
 
 ![alt text](https://github.com/josevc93/josevc93.github.io/blob/master/images/configurar-dominio-01.jpg "Acceso 1&1")
 
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+
 fsdafasf
 
 
