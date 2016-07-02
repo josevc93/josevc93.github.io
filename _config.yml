@@ -10,7 +10,7 @@ locale                   : "es-ES"
 title                    : "Blog informática"
 title_separator          : "-"
 name                     : "José Manuel Vázquez"
-description              : "An amazing website."
+description              : "Blog de informática."
 url                      : "https://josevc93.github.io"
 baseurl                  : #
 gh_repo                  :
@@ -65,7 +65,7 @@ google_ad_slot           :
 author:
   name             : "José Manuel Vázquez"
   avatar           : "perfil.jpg" #Imagen de perfil
-  bio              : "Blog de informática... (p)"
+  bio              : "Blog de informática."
   location         : "España"
   email            : josemanuel.vazquezcrespo@gmail.com
   uri              :
