@@ -23,6 +23,8 @@ Una vez comprado se te enviará un correo con tu ID de cliente (puede tardar uno
 
 Ya es posible editar nuestro dominio, para ello accede a Mis Productos -> Dominios -> Gestionar Dominios. Es posible que no te permita configurarlo, en ese caso únicamente debes esperar hasta que sea posible (tarda unos minutos). Seguidamente creamos un subdominio (recomiendo www o blog).
 
+![Crear subdominio]({{ site.baseurl }}/images/configurar-dominio-02.jpg "Crear subdominio")
+
 
 
 
