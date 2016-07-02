@@ -19,4 +19,7 @@ Si te decides por esta web, únicamente debes de comprobar si el dominio que bus
 
 Una vez comprado se te enviará un correo con tu ID de cliente (puede tardar unos minutos). Con esto puedes acceder al área de cliente para configurar tu dominio, aunque también puedes acceder introduciendo tu dominio.
 
+![alt text](https://github.com/josevc93/josevc93.github.io/blob/master/images/configurar-dominio-01.jpg "Acceso 1&1")
+
+
 
