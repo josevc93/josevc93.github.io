@@ -33,3 +33,15 @@ Adobe Kuler es una aplicación online que ofrece Adobe System gratuitamente. Con
 Herramienta didáctica con la que crear código CSS a partir de un texto cualquiera.
 
 <http://csstypeset.com/>
+
+## PXtoEM
+
+ Herramienta que nos permitirá convertir las unidades de medida en CSS, de unidades absolutas a unidades relativas (de PX a EM).
+ 
+ <http://pxtoem.com/>
+ 
+ ## ChartJS
+ 
+ Chart.js es una solución para mostrar gráficos de forma sencilla.
+ 
+ <http://www.chartjs.org/>
