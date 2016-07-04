@@ -46,7 +46,7 @@ Herramienta didáctica con la que crear código CSS a partir de un texto cualqui
  
  <http://www.chartjs.org/>
  
- ## Responsinator
+## Responsinator
  
 Permite probar tus aplicaciones web en las principales resoluciones de los dispositivos móviles, y también funciona para aplicaciones en local.
  
