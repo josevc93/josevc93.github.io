@@ -45,3 +45,18 @@ Herramienta didáctica con la que crear código CSS a partir de un texto cualqui
  Chart.js es una solución para mostrar gráficos de forma sencilla.
  
  <http://www.chartjs.org/>
+ 
+ ## Responsinator
+ 
+Permite probar tus aplicaciones web en las principales resoluciones de los dispositivos móviles, y también funciona para aplicaciones en local.
+ 
+ <http://www.responsinator.com/>
+ 
+ ## Unsplash
+ 
+ Aquí encontrarás imágenes de excelente calidad y lo mejor de todo que son gratuitas y libres para cualquier uso.
+ 
+ https://unsplash.com/
+ 
+ 
+ ¿Utilizas alguna otra? Compártela!
