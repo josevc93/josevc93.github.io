@@ -40,7 +40,7 @@ Herramienta didáctica con la que crear código CSS a partir de un texto cualqui
  
  <http://pxtoem.com/>
  
- ## ChartJS
+## ChartJS
  
  Chart.js es una solución para mostrar gráficos de forma sencilla.
  
@@ -54,7 +54,7 @@ Permite probar tus aplicaciones web en las principales resoluciones de los dispo
  
 ## Unsplash
  
- Aquí encontrarás imágenes de excelente calidad y lo mejor de todo que son gratuitas y libres para cualquier uso.
+ Aquí encontrarás imágenes de excelente calidad y lo mejor de todo es que son gratuitas y libres para cualquier uso.
  
  <https://unsplash.com/>
  
