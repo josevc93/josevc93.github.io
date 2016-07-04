@@ -18,6 +18,18 @@ Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostra
 
 ## IcoMoon
 
-Esta web muestra una gran variedad de icono que podemos utilizar en nuestro sitio web.
+Esta web muestra una gran variedad de iconos que podemos utilizar en nuestro sitio web.
 
 <https://icomoon.io/app/#/select>
+
+## Adobe Kuler
+
+Adobe Kuler es una aplicación online que ofrece Adobe System gratuitamente. Con esta aplicación nos resultará más sencillo escoger una buena combinación de colores, ya que te ofrece 5 colores que van a juego con uno que tu eliges como color base.
+
+<https://color.adobe.com/create/color-wheel/>
+
+## CSS Type Set
+
+Herramienta didáctica con la que crear código CSS a partir de un texto cualquiera.
+
+<http://csstypeset.com/>
