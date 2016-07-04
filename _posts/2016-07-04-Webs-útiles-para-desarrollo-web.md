@@ -40,7 +40,7 @@ Herramienta didáctica con la que crear código CSS a partir de un texto cualqui
  
  <http://pxtoem.com/>
  
- ## ChartJS
+## ChartJS
  
  Chart.js es una solución para mostrar gráficos de forma sencilla.
  
