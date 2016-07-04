@@ -16,4 +16,8 @@ Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostra
 
 <http://lipsum.com/>
 
-## Otro
+## IcoMoon
+
+Esta web muestra una gran variedad de icono que podemos utilizar en nuestro sitio web.
+
+<https://icomoon.io/app/#/select>
