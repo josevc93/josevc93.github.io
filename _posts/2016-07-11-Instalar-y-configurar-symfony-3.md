@@ -37,7 +37,7 @@ Para comprobar que todo funciona, hay que moverse a la carpeta del proyecto y ej
 $ php bin/console server:run
 ```
 
-Finalmente en el navegador accedemos a http://localhost:8000 y debería de mostrar lo siguiente:
+Finalmente en el navegador accedemos a *http://localhost:8000* y debería de mostrar lo siguiente:
 
 ![Symfony]({{ site.baseurl }}/images/symfony01.png "Symfony")
 
