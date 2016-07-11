@@ -13,4 +13,13 @@ title: Instalar y configurar Symfony 3 en Linux
 
 En primer lugar es necesario tener instalado un servidor web como Apache. Puedes ver como instalarlo [aquí](http://selmanarriaga.link/blog/es/2016/04/instalar-lamp-en-ubuntu-16-04/).
 
+## Instalador de symfony
+
+Como se indica en la [documentación](http://http://symfony.com/doc/current/book/installation.html) se recomienda utilizar el instalador de Symfony para crear nuevas aplicaciones en Symfony. Para ello hay que abrir la consola y ejecutar los siguientes comandos:
+
+```shell
+$ sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
+$ sudo chmod a+x /usr/local/bin/symfony
+```
+
 
