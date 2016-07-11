@@ -5,7 +5,7 @@ tags:
 - Framework
 categories:
 - Symfony
-title: Instalar y configurar Symfony en Linux
+title: Instalar y configurar Symfony 3 en Linux
 ---
 
 ## Requisitos previos
