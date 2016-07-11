@@ -9,3 +9,5 @@ title: Instalar y configurar Symfony en Linux
 ---
 
 ## Requisitos previos
+
+
