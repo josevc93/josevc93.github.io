@@ -2,9 +2,10 @@
 tags:
 - Desarrollo web
 - Programación web
-- Diseño web
+- Framework
+- Symfony
 categories:
-- Herramientas
+- Symfony
 title: Instalar y configurar Symfony en Linux
 ---
 
