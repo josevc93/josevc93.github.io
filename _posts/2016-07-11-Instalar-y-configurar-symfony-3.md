@@ -31,3 +31,11 @@ Hay que desplazarse a la carpeta dónde se quiere crear (si has instalado apache
 $ symfony new my_project_name
 ```
 
+Para comprobar que todo funciona, hay que moverse a la carpeta del proyecto y ejecutar:
+
+```shell
+$ php bin/console server:run
+```
+
+Finalmente en el navegador accedemos a http://localhost:8000 y debería de mostrar lo siguiente:
+
