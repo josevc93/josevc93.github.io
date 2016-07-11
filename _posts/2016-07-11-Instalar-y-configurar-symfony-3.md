@@ -7,7 +7,7 @@ categories:
 - Symfony
 title: Instalar y configurar Symfony 3 en Linux
 ---
-Symfony es un completo framework diseñado para optimizar el desarrollo de las aplicaciones web basado en el patrón Modelo Vista Controlador.
+[Symfony](http://symfony.com/) es un completo framework diseñado para optimizar el desarrollo de las aplicaciones web basado en el patrón Modelo Vista Controlador.
 
 ## Requisitos previos
 
