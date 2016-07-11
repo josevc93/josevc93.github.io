@@ -22,9 +22,10 @@ Como se indica en la [documentación](http://http://symfony.com/doc/current/book
 $ sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
 $ sudo chmod a+x /usr/local/bin/symfony
 ```
+
 ## Creando una aplicación
 
-Hay que desplazarse a la carpeta dónde se quiere crear (si has istalado apache */var/www/html*) y ejecutar el siguiente comando:
+Hay que desplazarse a la carpeta dónde se quiere crear (si has instalado apache */var/www/html*) y ejecutar el siguiente comando:
 
 ```shell
 $ symfony new my_project_name
