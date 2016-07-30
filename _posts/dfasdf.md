@@ -26,5 +26,9 @@ Estos son algunos de los diseños entre los que podemos elegir:
 
 Puedes encontrar muchos más aquí [JekyllThemes](http://jekyllthemes.org/).
 
+## Creando el blog
+
+Vamos a utilizar el diseño *Minimal Mistakes* aunque el proceso es el mismo para cualquiera que escojamos. 
+
 
 
