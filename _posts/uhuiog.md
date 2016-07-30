@@ -64,4 +64,7 @@ Para añadir la imagen de perfil se escribirá el nombre y extensión de la imag
 
 * avatar           : "perfil.jpg"
 
-Y subiremos la imagen a la carpeta *images*  
+Finalmente subiremos la imagen a la carpeta *images*.
+
+![Jekyll]({{ site.baseurl }}/images/blogJekyll-07.jpg "Jekyll")
+
