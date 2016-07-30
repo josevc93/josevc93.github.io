@@ -16,6 +16,15 @@ Si aún no la tienes, el primer paso es crear una cuenta en [GitHub](https://git
 
 ## Diseño del blog
 
-fff
+Estos son algunos de los diseños entre los que podemos elegir:
+
+* [Hyde](https://github.com/poole/hyde)
+* [Lanyon](https://github.com/poole/lanyon)
+* [Left](https://github.com/holman/left)
+* [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes)
+* [Skinny Bones] (https://github.com/mmistakes/skinny-bones-jekyll)
+
+Puedes encontrar muchos más aquí [JekyllThemes](http://jekyllthemes.org/).
+
 
 
