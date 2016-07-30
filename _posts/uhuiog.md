@@ -52,10 +52,11 @@ Finalmente si ponemos _**usuario**.github.io_ en el navegador podremos visualiza
 
 Lo primero que vamos a hacer es editar el archivo *_config.yml* modificando los siguientes apartados:
 
-* Locale  : "es-ES" (Si eres de España)
+* locale  : "es-ES" (Si eres de España)
 * title   : "Titulo de tu blog"
 * name    : "Tu nombre"
 * description : "Descripción del blog"
 * url     : "http://**usuario**.github.com"
-* 
+
+Además se modificarán también los datos del autor, que aparecen en el apartado *# Site Author*. Ahí podemos definir nuestro nombre, biografía, localización, email, twitter, facebook, etc... Los campos que no queramos añadir simplemente se dejan vacíos. 
 
