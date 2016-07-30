@@ -48,3 +48,14 @@ Finalmente si ponemos _**usuario**.github.io_ en el navegador podremos visualiza
 
 ![Jekyll]({{ site.baseurl }}/images/blogJekyll-06.jpg "Jekyll")
 
+## Primeras configuraciones
+
+Lo primero que vamos a hacer es editar el archivo *_config.yml* modificando los siguientes apartados:
+
+* Locale  : "es-ES" (Si eres de España)
+* title   : "Titulo de tu blog"
+* name    : "Tu nombre"
+* description : "Descripción del blog"
+* url     : "http://**usuario**.github.com"
+* 
+
