@@ -50,7 +50,7 @@ Finalmente si ponemos _**usuario**.github.io_ en el navegador podremos visualiza
 
 ## Primeras configuraciones
 
-Lo primero que vamos a hacer es editar el archivo *_config.yml* modificando los siguientes apartados:
+Lo primero que vamos a hacer es editar el archivo **_config.yml** modificando los siguientes apartados:
 
 * locale  : "es-ES" (Si eres de España)
 * title   : "Titulo de tu blog"
