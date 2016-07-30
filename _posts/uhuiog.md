@@ -60,4 +60,8 @@ Lo primero que vamos a hacer es editar el archivo **_config.yml** modificando lo
 
 Además se modificarán también los datos del autor, que aparecen en el apartado *# Site Author*. Ahí podemos definir nuestro nombre, biografía, localización, email, twitter, facebook, imagen de perfil, etc... Los campos que no queramos añadir simplemente se dejan vacíos. 
 
-Para añadir la imagen de perfil
+Para añadir la imagen de perfil se escribirá el nombre y extensión de la imagen, por ejemplo:
+
+* avatar           : "perfil.jpg"
+
+Y subiremos la imagen a la carpeta *images*  
