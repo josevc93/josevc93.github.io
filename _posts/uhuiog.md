@@ -58,5 +58,6 @@ Lo primero que vamos a hacer es editar el archivo **_config.yml** modificando lo
 * description : "Descripción del blog"
 * url     : "http://**usuario**.github.com"
 
-Además se modificarán también los datos del autor, que aparecen en el apartado *# Site Author*. Ahí podemos definir nuestro nombre, biografía, localización, email, twitter, facebook, etc... Los campos que no queramos añadir simplemente se dejan vacíos. 
+Además se modificarán también los datos del autor, que aparecen en el apartado *# Site Author*. Ahí podemos definir nuestro nombre, biografía, localización, email, twitter, facebook, imagen de perfil, etc... Los campos que no queramos añadir simplemente se dejan vacíos. 
 
+Para añadir la imagen de perfil
