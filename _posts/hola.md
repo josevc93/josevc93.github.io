@@ -83,3 +83,5 @@ El nombre del archivo debe ser **_año-mes-dia-nombre.md_**
 ![Jekyll]({{ site.baseurl }}/images/blogJekyll-10.jpg "Jekyll")
 
 (SEGUIR, como añadir categories, tags, referencia markdown... y foto de como va quedando)
+(ADEMAS, EN ESTE DISEÑO LA CARPETA _POSTS NO VIENE CREADA POR DEFECTO, HAY QUE AÑADIRLA)
+(OTRA COSA, NO APARECE EL DISEÑO BIEN ESO ES PORQUE HAY QUE AÑADIR UNAS ETIQUETAS PARA INDICAR QUE LOS POSTS REALMENTE SON POSTS)
