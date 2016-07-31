@@ -74,4 +74,4 @@ Finalmente subiremos la imagen a la carpeta *images*.
 
 ## Escribir posts
 
-Una vez que ya tienes el blog funcinando, ya puedes comenzar a escribir. Para ello accedemos a la carpeta (SEGUIR AQUI)
+Una vez que ya tienes el blog funcionando, ya puedes comenzar a escribir. Para ello accedemos a la carpeta (SEGUIR AQUI)
