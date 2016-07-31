@@ -74,4 +74,12 @@ Finalmente subiremos la imagen a la carpeta *images*.
 
 ## Escribir posts
 
-Una vez que ya tienes el blog funcionando, ya puedes comenzar a escribir. Para ello accedemos a la carpeta **_posts** (SEGUIR)
+Una vez que ya tienes el blog funcionando, ya puedes comenzar a escribir. Para ello accedemos a la carpeta **_posts** y creamos un nuevo archivo.
+
+![Jekyll]({{ site.baseurl }}/images/blogJekyll-09.jpg "Jekyll")
+
+El nombre del archivo debe ser **_año-mes-dia-nombre.md_**.
+
+![Jekyll]({{ site.baseurl }}/images/blogJekyll-10.jpg "Jekyll")
+
+(SEGUIR, como añadir categories, tags, referencia markdown... y foto de como va quedando)
