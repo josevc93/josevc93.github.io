@@ -82,6 +82,23 @@ Los *posts* deben de añadirse a la carpeta **_posts**, aunque en este diseño n
 
 ![Jekyll]({{ site.baseurl }}/images/blogJekyll-11.jpg "Jekyll")
 
+Aunque ya tengas creado tu primer post, no es posible visualizarlo (todavía). Tal y como viene en la [documentación](https://mmistakes.github.io/minimal-mistakes/docs/posts/), editaremos el archivo **_config.yml** añadiendo al final:
+
+```yml
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+```
+
 (SEGUIR, como añadir categories, tags, referencia markdown... y foto de como va quedando)
 (ADEMAS, EN ESTE DISEÑO LA CARPETA _POSTS NO VIENE CREADA POR DEFECTO, HAY QUE AÑADIRLA)
 (OTRA COSA, NO APARECE EL DISEÑO BIEN ESO ES PORQUE HAY QUE AÑADIR UNAS ETIQUETAS PARA INDICAR QUE LOS POSTS REALMENTE SON POSTS, ESTO ES POR EL EL DEFAULTS AÑADIDO EN CONFIG.YML, PARA HACERLO DE MANERA GLOBAL)
