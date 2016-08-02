@@ -74,7 +74,7 @@ Finalmente subiremos la imagen a la carpeta *images*.
 
 ## Escribir posts
 
-Una vez que ya tienes el blog funcionando, ya puedes comenzar a escribir. Para ello accedemos en la parte superior seleccionamos *'Create new file'*.
+Una vez que ya tienes el blog funcionando, ya puedes comenzar a escribir. En la parte superior seleccionamos *'Create new file'*.
 
 ![Jekyll]({{ site.baseurl }}/images/blogJekyll-09.jpg "Jekyll")
 
