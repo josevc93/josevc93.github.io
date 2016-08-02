@@ -99,6 +99,23 @@ defaults:
       related: true
 ```
 
+Ya es posible visualizar los *posts*, y para añadirles categorías y tags se añadirá al principio del post lo siguiente:
+
+```yml
+---
+tags:
+- uno
+- dos
+categories:
+- tres
+---
+```
+
+Se pueden añadir tantos tags y categorías como queramos, aunque lo normal es asignar una categoría y varios tags a cada entrada. Finalmente [aquí](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) puedes ver como se escriben en los *posts*.
+
+
+
+
 (SEGUIR, como añadir categories, tags, referencia markdown... y foto de como va quedando)
 (ADEMAS, EN ESTE DISEÑO LA CARPETA _POSTS NO VIENE CREADA POR DEFECTO, HAY QUE AÑADIRLA)
 (OTRA COSA, NO APARECE EL DISEÑO BIEN ESO ES PORQUE HAY QUE AÑADIR UNAS ETIQUETAS PARA INDICAR QUE LOS POSTS REALMENTE SON POSTS, ESTO ES POR EL EL DEFAULTS AÑADIDO EN CONFIG.YML, PARA HACERLO DE MANERA GLOBAL)
