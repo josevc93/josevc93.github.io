@@ -16,4 +16,14 @@ Hasta el momento, ya hemos visto como crear entradas en el blog, aunque al pulsa
 * [category-archive.html](https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/category-archive.html)
 * [tag-archive.html](https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/tag-archive.html)
 
-Con esto ya funcionará, y además podemos listar los tags o categorías en el menu de la siguiente manera:
+Con esto ya funcionará, y además podemos listar los tags y categorías en el menu editando el archivo **/_data/navigation.yml** de la siguiente manera:
+
+```yml
+main:
+  - title: "Categorías"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+
+
+```
