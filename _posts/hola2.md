@@ -1,4 +1,58 @@
+---
+tags:
+- GitHub
+- Jekyll
+categories:
+- GitHub
+title: Crear un blog con GitHub y Jekyll (parte 2)
+---
 
-INTRODUCCION
+Hemos visto en el post (anterior) <--ENLACE como crear un blog con Jekyll y Github y como configurar algunos aspectos. En este post se continuará configurando el blog.
+
+##Tags y categorías
 
 Hasta el momento, ya hemos visto como crear entradas en el blog, aunque al pulsar en alguna tag o categoría veremos que no dirige a ninguna parte. Para solucionarlo, se crearan dos archivos dentro de la carpeta **_pages**.
+
+**category-archive.html:**
+
+```yml
+---
+layout: archive
+permalink: /categories/
+title: "Categorías"
+author_profile: true
+---
+
+{% include base_path %}
+{% include group-by-array collection=site.posts field="categories" %}
+
+{% for category in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+```
+**tag-archive.md:**
+
+```yml
+---
+layout: archive
+permalink: /tags/
+title: "Etiquetas"
+author_profile: true
+---
+
+{% include base_path %}
+{% include group-by-array collection=site.posts field="tags" %}
+
+{% for tag in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+```
+
