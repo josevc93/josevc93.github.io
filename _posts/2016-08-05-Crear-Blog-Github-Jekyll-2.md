@@ -49,4 +49,4 @@ comments:
 
 Ya podemos comprobar que *Disqus* se encuentra funcionando.
 
-Accede [aquí](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) para seguir investigando, y espero que compartas tu blog en los comentarios.
+Accede [aquí](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) para seguir investigando, y espero que compartas tu blog en los comentarios. También podría interesarte como añadir un [dominio](http://www.josemanuelvazquez.es/github/Configurar-un-dominio-con-Github-y-Jekyll/).
