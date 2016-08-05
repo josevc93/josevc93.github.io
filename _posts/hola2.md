@@ -27,3 +27,7 @@ main:
 
 
 ```
+
+## Añadir DISQUS a los posts
+
+Podemos añadir un sistema de comentarios a nuestros posts de manera sencillo. Lo primero es crear una cuenta en [Disqus](https://disqus.com/). 
