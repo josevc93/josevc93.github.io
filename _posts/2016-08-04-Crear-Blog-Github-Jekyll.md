@@ -117,9 +117,6 @@ Ejemplo:
 
 ![Jekyll]({{ site.baseurl }}/images/blogJekyll-12.jpg "Jekyll")
 
-Y este sería el resultado:
+En el siguiente post veremos como listar categorías, tags y como añadir un sistema de comentarios. 
 
-![Jekyll]({{ site.baseurl }}/images/blogJekyll-13.jpg "Jekyll")
-
-
-**CONCLUIR POR AQUÍ. EN LA 2º PARTE QUE SE MUESTRE COMO LISTAR LOS TAGS/CATEGORIAS. PORQUE AHORA MISMO EL BOTON DE TAG Y CATEGORIA DE CADA ENTRADA NO DIRIGE A NINGUNA PARTE... COMO AÑADIR DISQUS EN CADA POST...**
+[Crear un blog con GitHub y Jekyll (parte 2)](http://www.josemanuelvazquez.es/github/Crear-Blog-Github-Jekyll-2/)
