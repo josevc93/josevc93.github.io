@@ -80,7 +80,7 @@ Una vez que ya tienes el blog funcionando, ya puedes comenzar a escribir. En la 
 
 ![Jekyll]({{ site.baseurl }}/images/blogJekyll-09.jpg "Jekyll")
 
-Los *posts* deben de añadirse a la carpeta ____posts__, aunque en este diseño no viene creada por defecto. Entonces la primera vez que creamos un archivo, crearemos además la carpeta añadiendo ___posts/archivo__ (El nombre del archivo debe ser **_año-mes-dia-nombre.md_**).
+Los *posts* deben de añadirse a la carpeta ____posts__, aunque en este diseño no viene creada por defecto. Entonces la primera vez que creamos un archivo, crearemos además la carpeta añadiendo ____posts/archivo__ (El nombre del archivo debe ser **_año-mes-dia-nombre.md_**).
 
 ![Jekyll]({{ site.baseurl }}/images/blogJekyll-11.jpg "Jekyll")
 
