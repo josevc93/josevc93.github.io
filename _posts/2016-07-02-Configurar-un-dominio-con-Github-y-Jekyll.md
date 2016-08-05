@@ -4,10 +4,10 @@ tags:
 - Jekyll
 categories:
 - GitHub
-title: Configurar un dominio con Github y Jekyll 
+title: Configurar un dominio con GitHub y Jekyll 
 ---
 
-Es muy sencillo configurar nuestro propio dominio en Github, para obtener *www.miDominio.com* en lugar de *username.github.io*.
+Es muy sencillo configurar nuestro propio dominio en GitHub, para obtener *www.miDominio.com* en lugar de *username.github.io*.
 
 ## Comprar un dominio
 
