@@ -63,7 +63,7 @@ Además se modificarán también los datos del autor, que aparecen en el apartad
 Para añadir la imagen de perfil se escribirá el nombre y extensión de la imagen, por ejemplo:
 
 ```yml
-avatar           : "perfil.jpg"
+avatar  : "perfil.jpg"
 ```
 
 Finalmente subiremos la imagen a la carpeta *images*.
