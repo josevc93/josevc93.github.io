@@ -1,9 +1,9 @@
 ---
 tags:
-- Github
+- GitHub
 - Jekyll
 categories:
-- Github
+- GitHub
 title: Configurar un dominio con Github y Jekyll 
 ---
 
