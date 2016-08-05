@@ -7,7 +7,7 @@ categories:
 title: Crear un blog con GitHub y Jekyll (parte 2)
 ---
 
-Hemos visto en el post (anterior) <--ENLACE como crear un blog con Jekyll y Github y como configurar algunos aspectos. En este post se continuará configurando el blog.
+Hemos visto en el post [anterior](http://www.josemanuelvazquez.es/github/Crear-Blog-Github-Jekyll/) como crear un blog con Jekyll y Github y como configurar algunos aspectos. En este post se continuará configurando el blog.
 
 ## Tags y categorías
 
