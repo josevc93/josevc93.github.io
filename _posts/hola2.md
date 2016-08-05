@@ -30,4 +30,17 @@ main:
 
 ## Añadir DISQUS a los posts
 
-Podemos añadir un sistema de comentarios a nuestros posts de manera sencillo. Lo primero es crear una cuenta en [Disqus](https://disqus.com/). 
+Podemos añadir un sistema de comentarios a nuestros posts rápidamente de manera sencilla. Lo primero es crear una cuenta en [Disqus](https://disqus.com/). 
+
+Después de crearla accedemos a [disqus.com/admin/create/](https://disqus.com/admin/create/). Aquí hay que tener en cuenta que el nombre que pongamos en **Website Name** es el que usaremos para añadir **DISQUS** a nuestro blog.
+
+En el menu que aparece en la izquierda hay que seleccionar *General* y añadir la URL de nuestra web en **Website URL**. Finalmente editamos el archivo **_config.yml** modificando las líneas *20-23* (en shortname, hay que añadir el nombre que pusimos en *Website name* en el apartado anterior).
+
+```yml
+comments:
+  provider               : "disqus"
+  disqus:
+    shortname            : "USUARIO"
+```
+
+Ya podemos comprobar que *Disqus* se encuentra funcionando.
