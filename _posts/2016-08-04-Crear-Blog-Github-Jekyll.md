@@ -46,8 +46,6 @@ Aquí se debe de cambiar el nombre del repositorio, y hay que llamarlo _**usuari
 
 Finalmente si ponemos _**usuario**.github.io_ en el navegador ya podemos visualizar nuestro blog.
 
-![Jekyll]({{ site.baseurl }}/images/blogJekyll-06.jpg "Jekyll")
-
 ## Primeras configuraciones
 
 Lo primero que vamos a hacer es editar el archivo **_config.yml** modificando los siguientes apartados:
