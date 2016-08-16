@@ -9,6 +9,10 @@ title: Scraping con PHP
 
 Web scraping es el proceso de recopilar información de forma automática de la Web. Aunque esxisten varias formas de realizarlo, en este artículo haremos uso de [Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/).
 
+## Simple HTML DOM Parser
+
+Lo primer es descargar el archivo desde [aquí](http://simplehtmldom.sourceforge.net/). Como ejemplo vamos a crear un archivo que muestre los titulos de los posts y su url, de este blog.
+
 ```php
 <?php
 
