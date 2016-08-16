@@ -11,7 +11,7 @@ Web scraping es el proceso de recopilar información de forma automática de la 
 
 ## Simple HTML DOM Parser
 
-Lo primer es descargar el archivo desde [aquí](http://simplehtmldom.sourceforge.net/). Como ejemplo vamos a crear un archivo que muestre los titulos de los posts y su url, de este blog.
+Lo primero es descargar el archivo desde [aquí](http://simplehtmldom.sourceforge.net/). Como ejemplo vamos a crear un archivo que muestre los titulos de los posts y su url, de este blog. Para obtener esto únicamente hay que mirar el código fuente del sitio (click derecho -> Inspect).
 
 ```php
 <?php
@@ -36,4 +36,5 @@ foreach( $html->find('div[class=list__item]') as $post )
 }
 
 ```
-fsadf
+
+
