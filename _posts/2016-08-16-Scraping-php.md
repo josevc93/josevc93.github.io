@@ -15,7 +15,6 @@ Lo primero es descargar el archivo desde [aquí](http://simplehtmldom.sourceforg
 
 ![Scraping]({{ site.baseurl }}/images/scraping-01.jpg "Scraping")
 
-
 ```php
 <?php
 
