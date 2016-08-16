@@ -41,4 +41,3 @@ foreach( $html->find('div[class=list__item]') as $post )
 
 ```
 
-
