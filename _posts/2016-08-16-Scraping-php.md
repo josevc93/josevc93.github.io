@@ -41,3 +41,17 @@ foreach( $html->find('div[class=list__item]') as $post )
 
 ```
 
+Se ha utilizado **innertext** para obtener el contenido de *<h2></h2>. También se puede utilizar tag, outertext ó plaintext. Veamos un ejemplo:
+
+``` php
+//Se aplica únicamente a este div
+$html = str_get_html("<div>foo <b>bar</b></div>"); 
+$e = $html->find("div", 0);
+
+echo $e->tag; // Devuelve: " div"
+echo $e->outertext; // Devuelve: " <div>foo <b>bar</b></div>"
+echo $e->innertext; // Devuelve: " foo <b>bar</b>"
+echo $e->plaintext; // Devuelve: " foo bar"
+```
+
+Si quieres más información sobre esto, puedes visitar la [documentación](http://simplehtmldom.sourceforge.net/manual.htm).
