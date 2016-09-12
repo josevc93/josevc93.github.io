@@ -12,6 +12,8 @@ En este artículo se aprenderá como generar entidades a partir de la base de da
 
 ![Symfony]({{ site.baseurl }}/images/entidadesbd01.png "Symfony")
 
+*(El diagrama se ha generado con [DIA](http://dia-installer.de/index.html.es))*
+
 ## Requisitos previos
 
 En primer lugar es necesario tener instalado un servidor web como Apache. Puedes ver como instalarlo [aquí](http://selmanarriaga.link/blog/es/2016/04/instalar-lamp-en-ubuntu-16-04/).
