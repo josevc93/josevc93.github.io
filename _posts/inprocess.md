@@ -97,4 +97,17 @@ Dado que las relaciones ManyToMany no son recomendables, debemos tratar de evita
 
 ![Symfony]({{ site.baseurl }}/images/entidadesbd02.png "Symfony")
 
-En este ejemplo tenemos una relación OneToMany entre Class y TeacherClass, y otra relación OneToMany entre Teacher y TeacherClass.
+En este ejemplo tenemos una relación OneToMany entre Class y TeacherClass, y otra relación OneToMany entre Teacher y TeacherClass. Se configura, por lo tanto, igual que el apartado OneToMany anterior. Veamos un ejemplo de como mostraríamos todos los profesores asignados a cada clase.
+
+``` php
+$em = $this->getDoctrine()->getEntityManager();
+$clase_repo = $em->getRepository("FilmBundle:Class");
+$clases = $clase_repo->findAll(); 
+
+foreach ($clases as $clase){
+  echo "<b>".$clase->getName()."</b><br/>";
+  $teacherclass = $clase->getTeacherClass();  
+  foreach($teacherclass as $tc)
+    echo $tc->getTeacher()->getName()."<br/>";
+}
+```
