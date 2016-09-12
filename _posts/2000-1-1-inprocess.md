@@ -16,7 +16,7 @@ En este artículo se aprenderá como generar entidades a partir de la base de da
 
 ## Generando entidades
 
-```shell
+``` shell
 $ php bin/console doctrine:mapping:convert xml ./src/NombreBundle/Resources/config/doctrine/metadata/orm --from-database --force
 $ php bin/console doctrine:mapping:import NombreBundle yml
 $ php bin/console doctrine:generate:entities NombreBundle
@@ -27,7 +27,7 @@ $ php bin/console doctrine:generate:entities NombreBundle
 
 En este ejemplo tenemos una relación ManyToOne entre Empleado y Departamento, dado que muchos empleados pertenecen a un departamento. Este tipo de relaciones se genera automáticamente y permite por ejemplo mostrar el nombre y apellido de cada empleado junto con el nombre del departamento al que pertenece de manera sencilla. Veamos como se hace:
 
-```php
+``` php
 $em = $this->getDoctrine()->getEntityManager();
 $empleado_repo = $em->getRepository("EmpresaBundle:Empleado");
 $empleados = $empleado_repo->findAll();
