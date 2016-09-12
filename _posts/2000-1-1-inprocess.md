@@ -101,7 +101,7 @@ En este ejemplo tenemos una relación OneToMany entre Class y TeacherClass, y ot
 
 ``` php
 $em = $this->getDoctrine()->getEntityManager();
-$clase_repo = $em->getRepository("FilmBundle:Class");
+$clase_repo = $em->getRepository("SchoolBundle:Class");
 $clases = $clase_repo->findAll(); 
 
 foreach ($clases as $clase){
