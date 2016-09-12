@@ -95,4 +95,6 @@ foreach($departamentos as $departamento){
 
 Dado que las relaciones ManyToMany no son recomendables, debemos tratar de evitarlas utilizando tablas intermedias en las que se utilizan relaciones OneToMany. Ejemplo:
 
+![Symfony]({{ site.baseurl }}/images/entidadesbd02.png "Symfony")
 
+En este ejemplo tenemos una relación OneToMany entre Class y TeacherClass, y otra relación OneToMany entre Teacher y TeacherClass.
