@@ -36,3 +36,57 @@ foreach($empleados as $empleado)
   echo $empleado->getName()." ".$empleado->getSurname()." ".$empleado->getDepartamento()->getName()."<br/>";
 ```
 
+## Relaciones OneToMany
+
+En el ejemplo en el que nos encontramos, existe una relación OneToMany entre Departamento y Empleado, dado que un departamento tiene asignados a muchos empleados. Esto permite mostrar de forma sencilla, todos los empleados asignados a cada departamento. Sin enmbargo, para que este tipo de relación funcione hay que realizar algunas configuraciones.
+
+Dentro de *Departamento.orm.yml* hay que añadir:
+
+``` yml
+OneToMany:
+  empleado:
+    targetEntity: Empleado
+    mappedBy: departamento
+    cascade: ["persist"]
+```
+
+Dentro de *empleado.orm.yml* hay que modificar:
+
+``` yml
+ManyToOne:
+ departamento:
+    ...
+    inversedBy: empleado
+```
+
+*(Se modifica inversedBy, que se encontraba a null)*
+
+Por último se modifica *Departamento.php* añadiendo:
+
+``` php
+  protected $empleado;
+  
+  public function _construct(){
+    $this->entry = new \Doctrine\Common\Collections\ArrayCollection();
+  }
+  
+  public function getEmpleados(){
+    return $this->entry;
+  }
+```
+
+Con estas modificaciones realizadas, ya podemos probar si todo funciona correctamente. Para ello, vamos a mostrar el nombre de cada departamento y la lista de empleados asignados a el.
+
+``` php
+$em = $this->getDoctrine()->getEntityManager();
+$departamento_repo = $em->getRepository("EmpresaBundle:Departamento");
+$departamentos = $departamento_repo->findAll();
+
+foreach($departamentos as $departamento){
+  echo "<b>.$departamento->getName()."</b><br/>";
+  
+  $empleados = $departamento->getEmpleados();
+  foreach($empleados as $empleado)
+    echo $empleado->getName()." ".$empleado->getSurname()."<br/>";
+}
+```
