@@ -14,7 +14,7 @@ En este artículo se aprenderá como generar entidades a partir de la base de da
 
 *(El diagrama se ha generado con [DIA](http://dia-installer.de/index.html.es))*
 
-## Comandos
+## Generando entidades
 
 ```shell
 $ php bin/console doctrine:mapping:convert xml ./src/NombreBundle/Resources/config/doctrine/metadata/orm --from-database --force
@@ -22,3 +22,5 @@ $ php bin/console doctrine:mapping:import NombreBundle yml
 $ php bin/console doctrine:generate:entities NombreBundle
 ```
 *(Hay que sustitur NombreBundle por el nombre de nuestro Bundle)*
+
+## Relaciones ManyToOne
