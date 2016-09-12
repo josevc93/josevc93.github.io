@@ -21,7 +21,7 @@ $ php bin/console doctrine:mapping:convert xml ./src/NombreBundle/Resources/conf
 $ php bin/console doctrine:mapping:import NombreBundle yml
 $ php bin/console doctrine:generate:entities NombreBundle
 ```
-*(Hay que sustitur NombreBundle por el nombre de nuestro Bundle)*
+*(Hay que sustituir NombreBundle por el nombre de nuestro Bundle)*
 
 ## Relaciones ManyToOne
 
