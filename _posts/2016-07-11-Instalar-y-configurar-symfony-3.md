@@ -41,3 +41,13 @@ Finalmente en el navegador accedemos a *http://localhost:8000* y debería de mos
 
 ![Symfony]({{ site.baseurl }}/images/symfony01.png "Symfony")
 
+## Configurando la aplicación
+
+Una vez que todo funciona correctamente, accedemos a *app/config/parameters.yml* donde modificaremos los siguientes valores de la base de datos:
+
+```shell
+database_name:
+database_user:
+database_password:
+```
+
