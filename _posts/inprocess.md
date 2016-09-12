@@ -24,3 +24,15 @@ $ php bin/console doctrine:generate:entities NombreBundle
 *(Hay que sustitur NombreBundle por el nombre de nuestro Bundle)*
 
 ## Relaciones ManyToOne
+
+En este ejemplo tenemos una relación ManyToOne entre Empleado y Departamento, dado que muchos empleados pertenecen a un departamento. Este tipo de relaciones se genera automáticamente y permite por ejemplo mostrar el nombre y apellido de cada empleado junto con el nombre del departamento al que pertenece de manera sencilla. Veamos como se hace:
+
+```php
+$em = $this->getDoctrine()->getEntityManager();
+$empleado_repo = $em->getRepository("EmpresaBundle:empleado");
+$empleados = $empleado_repo->findAll();
+
+foreach($empleados as $empleado)
+  echo $empleado->getName()." ".$empleado->getSurname()." ".$empleado->getDepartamento()->getName()."<br/>";
+```
+
