@@ -8,7 +8,9 @@ categories:
 - Symfony
 title: Generar entidades a partir de la base de datos en Symfony 3.
 ---
-En este artículo se aprenderá como generar entidades a partir de la base de datos utilizando [Symfony](http://symfony.com/) y se aprenderá como configurar las relaciones **ManyToOne** y **OneToMany**.
+En este artículo se aprenderá como generar entidades a partir de la base de datos utilizando [Symfony](http://symfony.com/) y se aprenderá como configurar las relaciones **ManyToOne** y **OneToMany**. En este artículo utilizaremos como ejemplo el siguiente diagrama:
+
+![Symfony]({{ site.baseurl }}/images/entidadesbd01.png "Symfony")
 
 ## Requisitos previos
 
