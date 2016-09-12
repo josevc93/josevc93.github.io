@@ -29,7 +29,7 @@ En este ejemplo tenemos una relación ManyToOne entre Empleado y Departamento, d
 
 ```php
 $em = $this->getDoctrine()->getEntityManager();
-$empleado_repo = $em->getRepository("EmpresaBundle:empleado");
+$empleado_repo = $em->getRepository("EmpresaBundle:Empleado");
 $empleados = $empleado_repo->findAll();
 
 foreach($empleados as $empleado)
