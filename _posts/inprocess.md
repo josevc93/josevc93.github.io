@@ -35,3 +35,7 @@ Para [eliminar un bundle](http://symfony.com/doc/current/bundles/remove.html) no
 4. Eliminar el directorio del bundle.
 
 ## Controlador
+
+> Def.
+> Nombre Controlador, Métodos, ...
+> Objeto Request
