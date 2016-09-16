@@ -18,7 +18,7 @@ Un bundle simplemente es un conjunto estructurado de archivos que se encuentran 
 
 ### Crear un bundle
 
-Podemos generar un bundle muy fácilmente utilizando el siguiente comando:
+Podemos [generar un bundle](https://symfony.com/doc/current/bundles.html#creating-a-bundle) muy fácilmente utilizando el siguiente comando:
 
 ``` shell
 $ php bin/console generate:bundle
