@@ -48,5 +48,33 @@ public function indexAction(){
 }
 ```
 
-> Objeto Request
+### Objeto Request
+
+Este objeto permite obtener variables mediante POST y GET. Ejemplo:
+
+```php
+public function indexAction(Request $request)
+{
+  //'page' puede ser un valor obtenido mediante POST o GET.
+  echo $request->query->get('page');
+}
+```
+
+**(Para que funcione hay que añadir 'use Symfony\Component\HttpFoundation\Request;')**
+
+### LLamando a la vista
+
+Para finalizar el controlador, se llama a la vista pasandole o no algún parámetro. Ejemplos:
+
+``` php
+//Se llama a login.html.twig sin parámetros
+return $this->render("AppBundle:login.html.twig");
+
+//Se le pasa a login.html.twig un parámetro 'valor'
+$valor = 3;
+return $this->render("AppBundle:login.html.twig", array(
+  "valor" = $valor;
+));
+```
+
 
