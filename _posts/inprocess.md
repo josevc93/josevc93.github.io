@@ -36,6 +36,17 @@ Para [eliminar un bundle](http://symfony.com/doc/current/bundles/remove.html) no
 
 ## Controlador
 
-> Def.
-> Nombre Controlador, Métodos, ...
+Los controladores se añaden en cada bundle dentro del directorio **/Controller** y se nombran con el nombre que queramos seguido de "Controller". Ejemplo: UserController, DefaultController... Dentro de los controladores, tenemos distintas funciones denominadas por su nombre seguidas de "Action. Ejemplo: indexAction, loginAction...
+
+### Redirecciones
+
+Como ejemplo, para redirigir a la ruta "login" desde indexAction se realizaría del siguiente modo:
+
+```php
+public function indexAction(){
+  return $this->redirect($this->generateUrl("login");
+}
+```
+
 > Objeto Request
+
