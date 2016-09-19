@@ -13,7 +13,7 @@ En este post se indicará como crear, o eliminar un bundle, así como sus contro
 
 ## Bundle
 
-Un bundle simplemente es un conjunto estructurado de archivos que se encuentran en un directorio y que implementan una sola característica. Puedes crear por ejemplo un BlogBundle, un ForoBundle o un bundle para gestionar usuarios (muchos de ellos ya existen como bundles de software libre). Cada directorio contiene todo lo relacionado con esa característica, incluyendo archivos PHP, plantillas, hojas de estilo, archivos Javascript, tests y cualquier otra cosa necesaria.
+Un [bundle](http://symfony.com/doc/current/bundles.html) simplemente es un conjunto estructurado de archivos que se encuentran en un directorio y que implementan una sola característica. Puedes crear por ejemplo un BlogBundle, un ForoBundle o un bundle para gestionar usuarios (muchos de ellos ya existen como bundles de software libre). Cada directorio contiene todo lo relacionado con esa característica, incluyendo archivos PHP, plantillas, hojas de estilo, archivos Javascript, tests y cualquier otra cosa necesaria.
 
 ### Crear un bundle
 
@@ -35,11 +35,11 @@ Para [eliminar un bundle](http://symfony.com/doc/current/bundles/remove.html) no
 
 ## Controlador
 
-Los controladores se añaden en cada bundle dentro del directorio **/Controller** y se nombran con el nombre que queramos seguido de "Controller". Ejemplo: UserController, DefaultController... Dentro de los controladores, tenemos distintas funciones denominadas por su nombre seguidas de "Action. Ejemplo: indexAction, loginAction...
+Los [controladores](https://symfony.com/doc/current/controller.html) se añaden en cada bundle dentro del directorio **/Controller** y se nombran con el nombre que queramos seguido de "Controller". Ejemplo: UserController, DefaultController... Dentro de los controladores, tenemos distintas funciones denominadas por su nombre seguidas de "Action. Ejemplo: indexAction, loginAction...
 
 ### Redirecciones
 
-Como ejemplo, para redirigir a la ruta "login" desde indexAction se realizaría del siguiente modo:
+Como ejemplo, para [redirigir](https://symfony.com/doc/current/controller.html#generating-urls) a la ruta "login" desde indexAction se realizaría del siguiente modo:
 
 ```php
 public function indexAction(){
@@ -49,7 +49,7 @@ public function indexAction(){
 
 ### Objeto Request
 
-Este objeto permite obtener variables mediante POST y GET. Ejemplo:
+El [objeto request](https://symfony.com/doc/current/controller.html#the-request-object-as-a-controller-argument) permite obtener variables mediante POST y GET. Ejemplo:
 
 ```php
 public function indexAction(Request $request)
@@ -61,9 +61,9 @@ public function indexAction(Request $request)
 
 * Para que funcione hay que añadir 'use Symfony\Component\HttpFoundation\Request;'.
 
-### LLamando a la vista
+### Llamando a la vista
 
-Para finalizar el controlador, se llama a la vista pasandole o no algún parámetro. Ejemplos:
+Para finalizar el controlador, se llama a la vista pasándole o no algún parámetro. Ejemplos:
 
 ``` php
 //Se llama a login.html.twig sin parámetros
