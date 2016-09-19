@@ -1,4 +1,3 @@
-
 ---
 tags:
 - Desarrollo web
@@ -60,7 +59,7 @@ public function indexAction(Request $request)
 }
 ```
 
-**(Para que funcione hay que añadir 'use Symfony\Component\HttpFoundation\Request;')**
+*(Para que funcione hay que añadir 'use Symfony\Component\HttpFoundation\Request;')*
 
 ### LLamando a la vista
 
