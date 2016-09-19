@@ -35,7 +35,7 @@ Para [eliminar un bundle](http://symfony.com/doc/current/bundles/remove.html) no
 
 ## Controlador
 
-Los [controladores](https://symfony.com/doc/current/controller.html) se añaden en cada bundle dentro del directorio **/Controller** y se nombran con el nombre que queramos seguido de "Controller". Ejemplo: UserController, DefaultController... Dentro de los controladores, tenemos distintas funciones denominadas por su nombre seguidas de "Action. Ejemplo: indexAction, loginAction...
+Los [controladores](https://symfony.com/doc/current/controller.html) se añaden en cada bundle dentro del directorio **/Controller** y se nombran con el nombre que queramos seguido de "Controller". Ejemplo: UserController, DefaultController... Dentro de los controladores, tenemos distintas funciones denominadas por su nombre seguidas de "Action". Ejemplo: indexAction, loginAction...
 
 ### Redirecciones
 
