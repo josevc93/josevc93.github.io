@@ -6,10 +6,10 @@ tags:
 - Linux
 categories:
 - Symfony
-title: Bundle, Controlador y rutas en Symfony 3.
+title: Bundle y Controlador en Symfony 3.
 ---
 
-sadfkjds kddsjf kdsjfk dsjfkj eqfj jf sdjf kwfejk.
+En este post se indicará como crear, o eliminar un bundle, así como sus controladores.
 
 ## Bundle
 
