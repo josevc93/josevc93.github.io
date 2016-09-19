@@ -9,7 +9,7 @@ categories:
 title: El enrutamiento en Symfony 3.
 ---
 
-En este post se indicará como crear, o eliminar un bundle, así como sus controladores.
+En este post se indicará como crear las distintas [rutas](https://symfony.com/doc/current/routing.html) de la aplicación.
 
 ## Rutas
 
