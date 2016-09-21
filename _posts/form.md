@@ -64,5 +64,48 @@ public function buildForm(FormBuilderInterface $builder, array $options)
     ;
 }
 ```
+* Category es un campo *EntityType*, ya que proporcionará un listado de categorías (Acción, Drama, Comedia...), todas las que tengamos en la tabla *Category*.
+* Se ha asignado *form-control* y *form-submit* para aplicar estilos de [Bootstrap](http://getbootstrap.com/).
 
+### Controlador y Vista
 
+En el controlador hay que añadir:
+
+``` php
+use FilmBundle\Entity\Film;
+use FilmBundle\Form\FilmType;
+```
+Finalmente, le pasamos el formulario a la vista para mostrarlo:
+
+``` php
+public function addAction(Request $request){
+    $film = new Film();
+    $form = $this->createForm(FilmType::class, $film);
+    $form->handleRequest($request);
+    
+    return $this->render("FilmBundle:Film:add.html.twig",array(
+        'form' => $form->createView()
+    )); 
+}
+```
+Y en la vista se muestra el formulario que le pasamos:
+
+```twig
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="col-lg-6">
+		<h2>Nueva película</h2>
+		{{form_start(form)}}
+		{{form_end(form)}}
+	</div>
+	<div class="clearfix"></div>
+</body>
+</html>
+```
+Aunque cuando tratemos de acceder a la URL por ejemplo */film/add* dará un error.
+
+![Jekyll]({{ site.baseurl }}/images/form02.png "Jekyll")
