@@ -107,6 +107,16 @@ Y en la vista se muestra el formulario que le pasamos:
 </body>
 </html>
 ```
+  
+  <body>
+    {{ prueba }}
+  </body>
+
+`` 
+  <head>
+    {{ prueba2 }}
+  </head>
+``
 
 Aunque cuando tratemos de acceder a la URL por ejemplo */film/add* dará un error.
 
