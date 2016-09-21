@@ -27,5 +27,15 @@ $ php bin/console doctrine:generate:form FilmBundle:Film
 * FilmBundle: Nombre del bundle donde vamos a generar el formulario.
 * Film: Nombre de la entidad sobre la que vamos a crear el formulario.
 
-Al ejecutar este comando se ha creado un directorio */form* en *FilmBundle*, y dentro un archivo *.php* que contiene el formulario.
+Al ejecutar este comando se ha creado un directorio */form* en *FilmBundle*, y dentro un archivo *.php* que contiene el formulario. Tenemos los siguientes atributos: title (**TextType**), description (**TextareaType**), image (**FileType**), categoría (**EntityType**) y será necesario un botón de envío (**SubmitType**). Por lo tanto habría que añadir:
+
+``` php
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+```
+Para ver todos los campos que se puede aplicar entra [aquí](http://symfony.com/doc/current/forms.html#text-fields).
+
 
