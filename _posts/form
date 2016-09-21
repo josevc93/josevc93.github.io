@@ -9,48 +9,23 @@ categories:
 title: Generar formularios en Symfony 3.
 ---
 
-En este post se indicará como crear formularios a través del siguiente ejemplo:
+En este post se indicará como crear [formularios](http://symfony.com/doc/current/forms.html) en Symfony 3. Se va a crear un formulario que permita insertar películas, siguiendo el siguiente diagrama:
 
+![Jekyll]({{ site.baseurl }}/images/form01.png "Jekyll")
 
+*(El diagrama se ha generado con [DIA](http://dia-installer.de/index.html.es))*
 
-## Rutas
+## Creando un formulario
 
-Al generar un bundle, se añade automáticamente en 'app/config/routing.yml' una ruta hacía ese nuevo bundle. Aunque hay que configurar las rutas a los controladores. Supongamos lo siguiente:
+### FilmType.php
 
-**AppBundle / DefaultController / loginAction**
+En primer lugar se ejecuta:
 
-Para añadirle una ruta simplemente accedemos a *AppBundle/Resources/config/routing.yml* y se añade:
-
-```yml
-default_login:
-  path: /login 
-  defaults: { _controller: AppBundle:Default:login }
+```shell
+$ php bin/console doctrine:generate:form FilmBundle:Film
 ```
-* default_login: Debe tener un nombre descriptivo, pero funcionará con cualquiera que le pongas.
-* path: Es la URL desde la que se accede, en este caso: *localhost:8000/login*.
-* defaults: Es la ruta para que la aplicación lo encuentre, es importante escribirlo en el orden adecuado *Bundle:Controlador:Método*.
+* FilmBundle: Nombre del bundle donde vamos a generar el formulario.
+* Film: Nombre de la entidad sobre la que vamos a crear el formulario.
 
-### Rutas con variables
-
-Por ejemplo vamos a pasarle a una ruta tres variables: idioma, nombre y página. 
-
-```php
-function loginAction($idioma, $nombre, $page){
-  ...
-}
-```
-Las variables tendrán un contenido por defecto, y el idioma solo podrá ser españo, inglés o francés, nombre tendrá que ser una cadena alfabética y página será un entero. Además únicamente se puede llamar por método GET.
-
-```yml
-default_index:
-  path: /index/{lang}/{name}/{page}
-  defaults: { _controller: AppBundle:Default:login, lang:es, name:jose, page:0}
-  methods: [GET]
-  requirements: 
-    name: "[a-zA-Z]*"
-    page: \d+
-    lang: es|en|fr
-```
-* El contenido por defecto se añade en 'defaults', sino todas las variables serían obligatorias.
-* En methos también es posible añadir [POST].
+Al ejecutar este comando se ha creado un directorio */form* en *FilmBundle*, y dentro un archivo *.php* que contiene el formulario.
 
