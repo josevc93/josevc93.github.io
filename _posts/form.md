@@ -24,8 +24,8 @@ En primer lugar se ejecuta:
 ```shell
 $ php bin/console doctrine:generate:form FilmBundle:Film
 ```
-* FilmBundle: Nombre del bundle donde vamos a generar el formulario.
-* Film: Nombre de la entidad sobre la que vamos a crear el formulario.
+* FilmBundle: Nombre del bundle donde se va a generar el formulario.
+* Film: Nombre de la entidad sobre la que se va a crear el formulario.
 
 Al ejecutar este comando se ha creado un directorio */form* en *FilmBundle*, y dentro un archivo *.php* que contiene el formulario. Tenemos los siguientes atributos: title (**TextType**), description (**TextareaType**), image (**FileType**), categoría (**EntityType**) y será necesario un botón de envío (**SubmitType**). Por lo tanto habría que añadir:
 
@@ -36,6 +36,33 @@ use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 ```
-Para ver todos los campos que se puede aplicar entra [aquí](http://symfony.com/doc/current/forms.html#text-fields).
+Para ver todos los campos que se puede aplicar entra [aquí](http://symfony.com/doc/current/forms.html#text-fields). Además hay que modificar *$builder*:
+
+```php
+public function buildForm(FormBuilderInterface $builder, array $options)
+{
+    $builder
+        ->add('title', TextType::class, array(
+            "label" => "Titulo",
+            "attr" => array("class" => "form-control")
+        ))
+        ->add('description', TextareaType::class, array(
+            "label" => "Descripcion",
+            "attr" => array("class" => "form-control")
+        ))
+        ->add('image', FileType::class, array(
+            "label" => "Imagen",
+            "attr" => array("class" => "form-control")
+        ))
+        ->add('category', EntityType::class, array(
+            "class" => 'FilmBundle:Category',
+            "attr" => array("class" => "form-control")
+        ))            
+        ->add ('Enviar', SubmitType::class, array("attr"=>array(
+            "class" => "form-submit btn btn-success"
+        )))
+    ;
+}
+```
 
 
