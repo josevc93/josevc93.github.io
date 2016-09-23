@@ -50,4 +50,4 @@ default_index:
     lang: es|en|fr
 ```
 * El contenido por defecto se añade en 'defaults', sino todas las variables serían obligatorias.
-* En methos también es posible añadir [POST].
+* En methods también es posible añadir [POST].
