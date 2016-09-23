@@ -37,7 +37,7 @@ function loginAction($idioma, $nombre, $page){
   ...
 }
 ```
-Las variables tendrán un contenido por defecto, y el idioma solo podrá ser españo, inglés o francés, nombre tendrá que ser una cadena alfabética y página será un entero. Además únicamente se puede llamar por método GET.
+Las variables tendrán un contenido por defecto, y el idioma solo podrá ser español, inglés o francés, nombre tendrá que ser una cadena alfabética y página será un entero. Además únicamente se puede llamar por método GET.
 
 ```yml
 default_index:
@@ -50,4 +50,4 @@ default_index:
     lang: es|en|fr
 ```
 * El contenido por defecto se añade en 'defaults', sino todas las variables serían obligatorias.
-* En methods también es posible añadir [POST].
+* En 'methods' también es posible añadir [POST].
