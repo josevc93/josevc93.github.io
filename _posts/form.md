@@ -123,3 +123,5 @@ Esto se debe a que trata de convertir el objeto category a un string, sin estar 
 Ahora, cuando se vaya a insertar una película aparece una lista de nombres de las distintas categorías para seleccionar una.
 
 ![Jekyll]({{ site.baseurl }}/images/form03.png "Jekyll")
+
+Ya aparece el formulario, y aunque envía los datos falta almacenarlos en la base de datos. Esto se verá en el [siguiente artículo].
