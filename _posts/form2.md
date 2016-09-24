@@ -16,69 +16,50 @@ Continuando con el [post anterior] sobre formularios vamos a ver como procesar l
 
 ### Almacenar los datos
 
-    public function addAction(Request $request){
-        $film = new Film();
-        $form = $this->createForm(FilmType::class, $film);
+Se modifica el controlador, para almacenar los datos recibidos en la base de datos.
 
-        $form->handleRequest($request);
+```php
+public function addAction(Request $request){
+  $film = new Film();
+  $form = $this->createForm(FilmType::class, $film);
+  $form->handleRequest($request);
 
-        if($form->isSubmitted()){ //Si el formulario se ha enviado
-            if($form->isValid()){ //Comprobar esto
-                
-                $film = new Film(); //Objeto Film, que se va a añadir
+  if($form->isSubmitted()){ //Si el formulario se ha enviado
+      if($form->isValid()){ //Si el formulario es válido
+          //Objeto film, para insertarlo posteriormente en la base de datos
+          $film = new Film(); 
 
-                $film->setTitle($form->get("title")->getData()); //Almacenamos los datos que se reciben
-                $film->setDescription($form->get("description")->getData());
-                
-                //Subir y almacenar la imagen
-               // $film->setImage(null); En principio
-               /* $file=$form["image"]->getData();
-                $ext=$file->guessExtension();
-                $file_name=time().".".$ext;
-                $file->move("uploads",$file_name);
+          //Se inicializan los valores del objeto film que se va a insertar con los datos recibidos
+          $film->setTitle($form->get("title")->getData()); 
+          $film->setDescription($form->get("description")->getData());
+          $film->setImage(null);
 
-                $film->setImage($file_name);*/
+          //Se recibe el nombre de la categoría, pero es necesario almacenar su id.
+          $em = $this->getDoctrine()->getEntityManager(); 
+          $category_repo=$em->getRepository("FilmBundle:Category");  
+          $category = $category_repo->find($form->get("category")->getData());
+          $film->setCategory($category);
 
-                //IMAGEN NO REQUERIDA
-                if(!empty($file) && $file!=null){
-                    $ext=$file->guessExtension();
-                    $file_name=time().".".$ext;
-                    $file->move("uploads",$file_name);
+          //Se inserta en la base de datos
+          $em->persist($film); 
+          $flush=$em->flush();
 
-                    $film->setImage($file_name);      
-                }else{
-                    $film->setImage(null);
-                }          
+          if($flush==null){ //Si se inserta correctamente
+              $status = "La película se ha añadido correctamente.";
+          }else{ //Si se produce un fallo al insertar
+              $status = "Error al añadir la película.";    
+          }
+      }else{ //Si el formulario envíado contiene datos no válidos
+          $status = "La película no se ha creado";
+      }
+  }
 
-                
-                //Necesario, ya que el formulario obtiene el nombre de la categoría pero queremos sacar su ID para almacenarlo
-                $em = $this->getDoctrine()->getEntityManager(); 
-                $category_repo=$em->getRepository("FilmBundle:Category");  
-                $category = $category_repo->find($form->get("category")->getData());
-                $film->setCategory($category);
-
-                /*Si tuviera un campo usuario, se podría sacar y almacenar así. Obteniendo el usuario logeado en la sesión.
-                $user=$this->getUser();
-                $film->setUser($user);*/
-
-                $em->persist($film); //Se añade a la base de datos
-                $flush=$em->flush();
-
-                if($flush==null){
-                    $status = "La película se ha añadido correctamente.";
-                }else{
-                    $status = "Error al añadir la película.";    
-                }
-            }else{
-                $status = "La película no se ha creado";
-            }
-            $this->session->getFlashBag()->add("status", $status);
-         //  return $this->redirectToRoute("blog_homepage");
-        }
-
-        return $this->render("FilmBundle:Film:add.html.twig",array(
-            'form' => $form->createView()
-        )); 
-    }
-
+  return $this->render("FilmBundle:Film:add.html.twig",array(
+      'form' => $form->createView()
+  )); 
 }
+```
+
+   /*Si tuviera un campo usuario, se podría sacar y almacenar así. Obteniendo el usuario logeado en la sesión.
+          $user=$this->getUser();
+          $film->setUser($user);*/
