@@ -30,3 +30,48 @@ FilmBundle\Entity\Film:
 
 Entra [aquí](http://symfony.com/doc/current/reference/constraints/Type.html#reference-constraint-type-type) para comprobar los distintos tipos que se pueden aplicar. Además estas son todas las [restricciones](http://symfony.com/doc/current/validation.html#basic-constraints) que pueden aplicarse. 
 
+## Eliminar y actualizar un registro
+
+Para [eliminar](https://symfony.com/doc/current/doctrine.html#deleting-an-object) un registro se utiliza *remove()*.
+
+```javascript
+public function deleteAction($id){
+  $em = $this->getDoctrine()->getEntityManager();
+  $film_repo = $em->getRepository("FilmBundle:Film");
+  
+  $film = $film_repo->find($id);
+  $em->remove($curso);
+  
+  $flush=$em->flush();
+  
+  if($flush!=null)
+    echo "No se ha borrado.";
+  else
+    echo "La película se ha borrado correctamente.";
+  
+  die();
+}
+```
+Y para [actualizar](https://symfony.com/doc/current/doctrine.html#persisting-objects-to-the-database) un registro se modifican los valores de los atributos que queramos y se utiliza *persist()*. Por ejemplo vamos a modificar el título:
+
+```javascript
+public function updateAction($id, $title, $description, $image){
+  $em = $this->getDoctrine()->getEntityManager();
+  $film_repo = $em->getRepository("FilmBundle:Film");
+  
+  $film = $film_repo->find($id);
+  $film->setTitle($title);
+  $film->setDescription($description);
+  $film->setImage($image);
+  
+  $em->persist($film);
+  $flush=$em->flush();
+  
+  if($flush!=null)
+    echo "No se ha actualizado.";
+  else
+    echo "La película se ha actualizado correctamente.";
+  
+  die();
+}
+```
