@@ -149,16 +149,11 @@ public function addAction(Request $request){
 }
 ```
 
-{% for message in app.session.flashbag().get('status') %}
-			<div class="alert alert-success">{{ message }}</div>
-		{% endfor %}
+Finalmente editamos la vista para poder ver el resultado:
 
--> Controlar que la película no este repetida (otra con el mismo titulo)
--> Imagen Opcional
--> Validar Formulario
--> Mensaje Flash (quizás en 3º parte)
---------
-3º parte
---------
-- Eliminar película
-- Editar película
+```javascript
+{% for message in app.session.flashbag().get('status') %}
+		<div class="alert alert-success">{{ message }}</div>
+{% endfor %}
+```
+
