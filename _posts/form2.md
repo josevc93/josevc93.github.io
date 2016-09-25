@@ -84,6 +84,10 @@ $file->move("uploads",$file_name);
 $film->setImage($file_name);
 ```
 
+### Control de películas duplicadas
+
+Se controlará que no existan dos películas repetidas (con el mismo nombre).
+
 -> Controlar que la película no este repetida (otra con el mismo titulo)
 -> Imagen Opcional
 -> Validar Formulario
