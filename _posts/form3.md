@@ -24,7 +24,7 @@ FilmBundle\Entity\Film:
           min: 2
           minMessage: "El nombre tiene que tener mas de 2 caracteres"
       - Type: 
-          type: string
+          type: numeric
           message: "El tipo debe ser numérico"
 ```
 
