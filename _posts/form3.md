@@ -23,8 +23,10 @@ FilmBundle\Entity\Film:
       - Length:
           min: 2
           minMessage: "El nombre tiene que tener mas de 2 caracteres"
-      - Regex: 
-          pattern: '/[ -@{-~[-`]/'
-          match: false
-          message: "Unicamente se permiten caracteres a-z"
+      - Type: 
+          type: string
+          message: "El tipo debe ser numérico"
 ```
+
+Entra [aquí](http://symfony.com/doc/current/reference/constraints/Type.html#reference-constraint-type-type) para comprobar los distintos tipos que se pueden aplicar. Además estas son todas las [restricciones](http://symfony.com/doc/current/validation.html#basic-constraints) que pueden aplicarse. 
+
