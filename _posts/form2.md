@@ -110,6 +110,16 @@ if(count($film)==0){
 }
 ```
 
+if(!empty($file) && $file!=null){
+                        $ext=$file->guessExtension();
+                        $file_name=time().".".$ext;
+                        $file->move("uploads",$file_name);
+
+                        $film->setImage($file_name);      
+                    }else{
+                        $film->setImage(null);
+                    }    
+
 -> Controlar que la película no este repetida (otra con el mismo titulo)
 -> Imagen Opcional
 -> Validar Formulario
