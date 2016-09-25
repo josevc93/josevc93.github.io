@@ -157,3 +157,5 @@ Finalmente editamos la vista para poder ver el resultado:
 {% endfor %}
 ```
 
+![Jekyll]({{ site.baseurl }}/images/form04.png "Jekyll")
+
