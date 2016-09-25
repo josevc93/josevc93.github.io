@@ -92,7 +92,19 @@ Hay algunos atributos que no deberían ser obligatorios, por ejemplo la imagen. 
  "required" => false
 ```
 
-Además hay que modificar el controlador para que no se produzca ningún fallo si el campo imagen se envía vacío.
+Además hay que modificar el controlador para que no se produzca ningún fallo si el campo imagen se envía vacío. De forma que sustituimos el código del apartado anterior por el siguiente:
+
+```javascript
+if(!empty($file) && $file!=null){
+    $ext=$file->guessExtension();
+    $file_name=time().".".$ext;
+    $file->move("uploads",$file_name);
+
+    $film->setImage($file_name);      
+}else{
+    $film->setImage(null);
+}    
+```
 
 ### Control de películas duplicadas
 
@@ -110,15 +122,7 @@ if(count($film)==0){
 }
 ```
 
-if(!empty($file) && $file!=null){
-                        $ext=$file->guessExtension();
-                        $file_name=time().".".$ext;
-                        $file->move("uploads",$file_name);
 
-                        $film->setImage($file_name);      
-                    }else{
-                        $film->setImage(null);
-                    }    
 
 -> Controlar que la película no este repetida (otra con el mismo titulo)
 -> Imagen Opcional
