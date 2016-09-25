@@ -84,19 +84,31 @@ $file->move("uploads",$file_name);
 $film->setImage($file_name);
 ```
 
+## Imagen opcional
+
+Hay algunos atributos que no deberían ser obligatorios, por ejemplo la imagen. Para hacer la imagen opcional lo primero es editar */Form/FilmType.php* añadiendo en *->add('imagen',...)*:
+
+```javascript
+ "required" => false
+```
+
+Además hay que modificar el controlador para que no se produzca ningún fallo si el campo imagen se envía vacío.
+
 ### Control de películas duplicadas
 
-Se controlará que no existan dos películas repetidas (con el mismo nombre).
+Se controlará que no existan dos películas repetidas (con el mismo nombre). Por lo que hay que realizar una consulta a la base de datos con el nombre de la película que se recibe, y en el caso de que no devuelva ningún registro se almacenará la nueva película.
 
+```javascript
 $em = $this->getDoctrine()->getEntityManager();
-                $film_repo=$em->getRepository("FilmBundle:Film");
-                $film = $film_repo->findOneBy(array("title"=>$form->get("title")->getData()));
+$film_repo=$em->getRepository("FilmBundle:Film");
+$film = $film_repo->findOneBy(array("title"=>$form->get("title")->getData()));
 
-                if(count($film)==0){
-                    ---
-                 }else{
-                    $status = "La película ya existe";
-                }
+if(count($film)==0){
+   ...
+}else{
+   $status = "La película ya existe";
+}
+```
 
 -> Controlar que la película no este repetida (otra con el mismo titulo)
 -> Imagen Opcional
