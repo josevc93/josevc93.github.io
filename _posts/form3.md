@@ -17,4 +17,14 @@ Para [validar el formulario](http://symfony.com/doc/current/validation.html) se 
 
 ```yml
 FilmBundle\Entity\Film:
+  properties:
+    title:
+      - NotBlank: {message: "El nombre no puede estar vacío."}
+      - Length:
+          min: 2
+          minMessage: "El nombre tiene que tener mas de 2 caracteres"
+      - Regex: 
+          pattern: '/[ -@{-~[-`]/'
+          match: false
+          message: "Unicamente se permiten caracteres a-z"
 ```
