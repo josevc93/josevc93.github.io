@@ -127,8 +127,31 @@ if(count($film)==0){
 Es posible mostrar el contenido de la variable status previamente creada, para indicar al usuario si se ha producido un fallo. Para que funcione hay que añadir:
 
 ```javascript
-use Symfony
+use Symfony\Component\HttpFoundation\Session\Session;
 ```
+
+Además se añade dentro de la clase:
+
+```javascript
+private $session; 
+
+public function __construct(){
+    $this->session = new session();
+}  
+
+public function addAction(Request $request){
+  ...
+  if($form->isSubmitted()){ //Si el formulario se ha enviado
+    ...
+    $this->session->getFlashBag()->add("status", $status);
+  }
+  ...
+}
+```
+
+{% for message in app.session.flashbag().get('status') %}
+			<div class="alert alert-success">{{ message }}</div>
+		{% endfor %}
 
 -> Controlar que la película no este repetida (otra con el mismo titulo)
 -> Imagen Opcional
