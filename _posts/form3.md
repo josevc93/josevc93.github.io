@@ -6,7 +6,7 @@ tags:
 - Linux
 categories:
 - Symfony
-title: Generar formularios en Symfony 3 (parte 2).
+title: Generar formularios en Symfony 3 (parte 3).
 ---
 
 Continuando con el [post anterior] sobre formularios vamos a ver como procesar los datos que nos llegan (...)
