@@ -88,6 +88,16 @@ $film->setImage($file_name);
 
 Se controlará que no existan dos películas repetidas (con el mismo nombre).
 
+$em = $this->getDoctrine()->getEntityManager();
+                $film_repo=$em->getRepository("FilmBundle:Film");
+                $film = $film_repo->findOneBy(array("title"=>$form->get("title")->getData()));
+
+                if(count($film)==0){
+                    ---
+                 }else{
+                    $status = "La película ya existe";
+                }
+
 -> Controlar que la película no este repetida (otra con el mismo titulo)
 -> Imagen Opcional
 -> Validar Formulario
