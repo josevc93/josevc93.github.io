@@ -86,7 +86,7 @@ $film->setImage($file_name);
 
 ## Imagen opcional
 
-Hay algunos atributos que no deberían ser obligatorios, por ejemplo la imagen. Para hacer la imagen opcional lo primero es editar */Form/FilmType.php* añadiendo en *->add('imagen',...)*:
+Hay algunos atributos que no deberían ser obligatorios, por ejemplo la imagen. Para hacer la imagen opcional lo primero es editar */Form/FilmType.php* añadiendo en *->add('image',...)*:
 
 ```javascript
  "required" => false
