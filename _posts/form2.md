@@ -122,7 +122,13 @@ if(count($film)==0){
 }
 ```
 
+### Mostrar mensaje Flash
 
+Es posible mostrar el contenido de la variable status previamente creada, para indicar al usuario si se ha producido un fallo. Para que funcione hay que añadir:
+
+```javascript
+use Symfony
+```
 
 -> Controlar que la película no este repetida (otra con el mismo titulo)
 -> Imagen Opcional
