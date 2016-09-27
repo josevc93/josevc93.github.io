@@ -35,7 +35,7 @@ public function addAction(Request $request){
           $film->setImage(null);
 
           //Se recibe el nombre de la categoría, pero es necesario almacenar su id.
-          $em = $this->getDoctrine()->getEntityManager(); 
+          $em = $this->getDoctrine()->getManager(); 
           $category_repo=$em->getRepository("FilmBundle:Category");  
           $category = $category_repo->find($form->get("category")->getData());
           $film->setCategory($category);
@@ -193,7 +193,7 @@ class FilmController extends Controller
         if($form->isSubmitted()){ //Si el formulario se ha enviado
             if($form->isValid()){ //Si el formulario es válido
                 //Se comprueba que la película no este repetida
-                $em = $this->getDoctrine()->getEntityManager();
+                $em = $this->getDoctrine()->getManager();
                 $film_repo=$em->getRepository("FilmBundle:Film");
                 $film = $film_repo->findOneBy(array("title"=>$form->get("title")->getData()));
 
