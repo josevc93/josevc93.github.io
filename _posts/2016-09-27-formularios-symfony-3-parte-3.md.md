@@ -36,7 +36,7 @@ Para [eliminar](https://symfony.com/doc/current/doctrine.html#deleting-an-object
 
 ```javascript
 public function deleteAction($id){
-  $em = $this->getDoctrine()->getEntityManager();
+  $em = $this->getDoctrine()->getManager();
   $film_repo = $em->getRepository("FilmBundle:Film");
   
   $film = $film_repo->find($id);
@@ -56,7 +56,7 @@ Y para [actualizar](https://symfony.com/doc/current/doctrine.html#persisting-obj
 
 ```javascript
 public function updateAction($id, $title, $description, $image){
-  $em = $this->getDoctrine()->getEntityManager();
+  $em = $this->getDoctrine()->getManager();
   $film_repo = $em->getRepository("FilmBundle:Film");
   
   $film = $film_repo->find($id);
