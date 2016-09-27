@@ -247,4 +247,4 @@ class FilmController extends Controller
 }
 ```
 
-Aunque el formulario se envía y se almacena en la base de datos, es posible añadir reglas de validación a los distintos campos. Por ejemplo poniendo un tamaño mínimo al título, o no permitir ciertos caracteres. Esto, junto con eliminar y editar la información de la base de datos se verá en el [siguiente artículo].
+Aunque el formulario se envía y se almacena en la base de datos, es posible añadir reglas de validación a los distintos campos. Por ejemplo poniendo un tamaño mínimo al título, o no permitir ciertos caracteres. Esto, junto con eliminar y editar la información de la base de datos se verá en el [siguiente artículo](http://www.josemanuelvazquez.es/symfony/formularios-symfony-3-parte-3.md/).
