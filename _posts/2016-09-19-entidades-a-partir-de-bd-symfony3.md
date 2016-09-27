@@ -28,7 +28,7 @@ $ php bin/console doctrine:generate:entities NombreBundle
 En este ejemplo tenemos una relación ManyToOne entre Empleado y Departamento, dado que muchos empleados pertenecen a un departamento. Este tipo de relaciones se genera automáticamente y permite por ejemplo mostrar el nombre y apellido de cada empleado junto con el nombre del departamento al que pertenece de manera sencilla. Veamos como se hace:
 
 ``` php
-$em = $this->getDoctrine()->getEntityManager();
+$em = $this->getDoctrine()->getManager();
 $empleado_repo = $em->getRepository("EmpresaBundle:Empleado");
 $empleados = $empleado_repo->findAll();
 
@@ -78,7 +78,7 @@ Por último se modifica *Departamento.php* añadiendo:
 Con estas modificaciones realizadas, ya podemos probar si todo funciona correctamente. Para ello, vamos a mostrar el nombre de cada departamento y la lista de empleados asignados a el.
 
 ``` php
-$em = $this->getDoctrine()->getEntityManager();
+$em = $this->getDoctrine()->getManager();
 $departamento_repo = $em->getRepository("EmpresaBundle:Departamento");
 $departamentos = $departamento_repo->findAll();
 
@@ -100,7 +100,7 @@ Dado que las relaciones ManyToMany no son recomendables, debemos tratar de evita
 En este ejemplo tenemos una relación OneToMany entre Class y TeacherClass, y otra relación OneToMany entre Teacher y TeacherClass. Se configura, por lo tanto, igual que el apartado OneToMany anterior. Veamos un ejemplo de como mostraríamos todos los profesores asignados a cada clase.
 
 ``` php
-$em = $this->getDoctrine()->getEntityManager();
+$em = $this->getDoctrine()->getManager();
 $clase_repo = $em->getRepository("SchoolBundle:Class");
 $clases = $clase_repo->findAll(); 
 
