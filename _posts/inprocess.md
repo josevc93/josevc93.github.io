@@ -75,7 +75,21 @@ class User implements UserInterface
 
 Además hay que añadir los siguientes métodos:
 
-(añadir métodos)
+```javascript
+public function getUserName(){
+    return $this->email; //Ya que se logea con el email
+}
+
+public function getSalt(){
+    return null;
+}
+
+public function getRoles(){
+    return array($this->getRole());
+}
+
+public function eraseCredentials(){}
+```
 
 - Método login en el controlador user
 - Añadir la vista login.html.twig
