@@ -144,7 +144,7 @@ En la vista se muestra el login:
 </div>
 ```
 
-![CNAME]({{ site.baseurl }}/images/login01.png "CNAME")
+![CNAME]({{ site.baseurl }}/images/login01.png "LOGIN")
 
 ## Cifrar contraseñas
 
@@ -153,7 +153,8 @@ En el registro de usuarios es importante que cuando se almacenen contraseñas de
 ```javascript
 $factory = $this->get("security.encoder_factory"); 
 $encoder = $factory->getEncoder($user);
-$password = $encoder->encodePassword($form->get("password")->getData(), $user->getSalt()); //Contraseña cifrada           
+//Se almacena en password la contraseña cifrada
+$password = $encoder->encodePassword($form->get("password")->getData(), $user->getSalt());    
 ```
 
 - Cifrar contraseñas
