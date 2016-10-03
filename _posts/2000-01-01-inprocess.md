@@ -144,6 +144,7 @@ En la vista se muestra el login:
 </div>
 ```
 
+
 ![CNAME]({{ site.baseurl }}/images/login01.png "LOGIN")
 
 ## Cifrar contraseñas
@@ -157,6 +158,6 @@ $encoder = $factory->getEncoder($user);
 $password = $encoder->encodePassword($form->get("password")->getData(), $user->getSalt());    
 ```
 
-- Cifrar contraseñas
+
 - Rutas y control de acceso
 - Mirar formulario de registro
