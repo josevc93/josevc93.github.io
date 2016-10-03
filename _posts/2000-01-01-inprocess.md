@@ -144,17 +144,16 @@ En la vista se muestra el login:
 </div>
 ```
 
+![CNAME]({{ site.baseurl }}/images/login01.png "CNAME")
+
 ## Cifrar contraseñas
 
 En el registro de usuarios es importante que cuando se almacenen contraseñas de usuarios se hagan cifradas. Para conseguir esto se añade en el controlador:
 
 ```javascript
-//cifrado de contraseña
-                    $factory = $this->get("security.encoder_factory"); 
-                    $encoder = $factory->getEncoder($user);
-                    $password = $encoder->encodePassword($form->get("password")->getData(), $user->getSalt());
-                    //fin cifrado, se almacena en $password
-
+$factory = $this->get("security.encoder_factory"); 
+$encoder = $factory->getEncoder($user);
+$password = $encoder->encodePassword($form->get("password")->getData(), $user->getSalt()); //Contraseña cifrada           
 ```
 
 - Cifrar contraseñas
