@@ -132,7 +132,7 @@ En la vista se muestra el login:
 <h2>Login:</h2>
 <div class="col-lg-4">
   path("login_check")
-	<form action="&#123;&#123;hola&#125;&#125;" method="post">
+	<form action="{% raw %}{{hola}}{% endraw %}" method="post">
 		<label>Email:</label>
 		<input type="email" id="username" name="_username" value="{{ last_username }}" class="form-control" />
 		<label>Password:</label>
