@@ -158,6 +158,24 @@ $encoder = $factory->getEncoder($user);
 $password = $encoder->encodePassword($form->get("password")->getData(), $user->getSalt());    
 ```
 
+## Control de acceso
 
-- Rutas y control de acceso
-- Mirar formulario de registro
+Es posible permitir o denegar el acceso a una ruta según sea el rol del usuario (*ROLE_USER, ROLE_ADMIN...*). Esto se indica en el archivo *app/config/security.yml*. 
+
+```yml
+security:
+  encoders:
+    ...
+   
+  providers:
+    ...
+    
+  firewalls:
+    ...
+    
+  access_control:
+    - { path: ^/film, roles: ROLE_ADMIN }
+    - { path: ^/book, roles: ROLE_ADMIN }
+```
+
+En este ejemplo, a las rutas */film* y */book* únicamente pueden acceder los usuarios logeados con el rol ADMIN. Es posible hacer que una ruta sea accesible por varios roles: *roles: [ROLE_USER, ROLE_ADMIN]*.
