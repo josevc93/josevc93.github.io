@@ -62,7 +62,7 @@ security:
 
 ## User.php
 
-El login se realizará con la clase user.php por lo que para que funcione la clase debe de implementar *UserIntarface*:
+El login se realizará con la clase user.php por lo que para que funcione la clase debe de implementar *UserIntarface*: (mirar esta parte)
 
 ```javascript
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -72,3 +72,13 @@ class User implements UserInterface
 ...
 }
 ```
+
+Además hay que añadir los siguientes métodos:
+
+(añadir métodos)
+
+- Método login en el controlador user
+- Añadir la vista login.html.twig
+- Cifrar contraseñas
+- Rutas y control de acceso
+- Mirar formulario de registro
