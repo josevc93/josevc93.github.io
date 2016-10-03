@@ -93,6 +93,8 @@ public function eraseCredentials(){}
 
 ## Controlador
 
+En el controlador, como viene en la [documentación](http://symfony.com/doc/current/security/form_login_setup.html) se llama a la vista pasandole el error en caso de que se produzca y el último usuario introducido.
+
 ```javascript
 <?php
 
