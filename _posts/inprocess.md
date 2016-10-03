@@ -26,3 +26,11 @@ login_check:
 logout:
     path: /logout
 ```
+
+## Security
+
+Es necesario modificar el archivo *app/config/security.yml* de la siguiente manera:
+
+```yml
+
+```
