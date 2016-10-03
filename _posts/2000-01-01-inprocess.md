@@ -131,8 +131,7 @@ En la vista se muestra el login:
 {% endraw %}
 <h2>Login:</h2>
 <div class="col-lg-4">
-  path("login_check")
-	<form action="{% raw %}{{hola}}{% endraw %}" method="post">
+	<form action="{% raw %}{{path('login_check')}}{% endraw %}" method="post">
 		<label>Email:</label>
 		<input type="email" id="username" name="_username" value="{{ last_username }}" class="form-control" />
 		<label>Password:</label>
@@ -146,8 +145,6 @@ En la vista se muestra el login:
 ```
 
 
-- Método login en el controlador user
-- Añadir la vista login.html.twig
 - Cifrar contraseñas
 - Rutas y control de acceso
 - Mirar formulario de registro
