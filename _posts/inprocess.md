@@ -59,3 +59,16 @@ security:
                 path: /logout
                 target: /login #Ruta a la que se dirige al cerrar sesión (vuelve al login)
 ```
+
+## User.php
+
+El login se realizará con la clase user.php por lo que para que funcione la clase debe de implementar *UserIntarface*:
+
+```javascript
+use Symfony\Component\Security\Core\User\UserInterface;
+
+class User implements UserInterface
+{
+...
+}
+```
