@@ -62,7 +62,7 @@ security:
 
 ## User.php
 
-El login se realizará con la clase user.php por lo que para que funcione la clase debe de implementar *UserIntarface*: (mirar esta parte)
+El login se realizará con la clase *Entity/User.php* por lo que para que funcione la clase debe de implementar *UserInterface*: 
 
 ```javascript
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -90,6 +90,10 @@ public function getRoles(){
 
 public function eraseCredentials(){}
 ```
+
+## Controlador
+
+
 
 - Método login en el controlador user
 - Añadir la vista login.html.twig
