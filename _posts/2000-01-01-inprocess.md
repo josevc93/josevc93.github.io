@@ -123,7 +123,7 @@ class UserController extends Controller
 En la vista se muestra el login:
 
 ```html
-<!--Este if es solo para comprobar si funciona el Login-->
+<!--Este if es solo para comprobar si funciona el Login, si funciona, eliminarlo-->
 {% raw %}
 {% if app.user != null %}
 	{{ dump(app.user) }}
@@ -131,14 +131,14 @@ En la vista se muestra el login:
 {% endraw %}
 <h2>Login:</h2>
 <div class="col-lg-4">
-	<form action="{{path("login_check")}}" method="post">
+	<form action="{{ "{{ path("login_check") " }}}}" method="post">
 		<label>Email:</label>
 		<input type="email" id="username" name="_username" value="{{ last_username }}" class="form-control" />
 		<label>Password:</label>
 		<input type="password" id="password" name="_password" class="form-control" />
 		<br/>
 		<input type="submit" value="Entrar" class="btn btn-success"/>
-		<!-- La siguiente línea es para que redirija a login -->
+		<!-- Al envíar el formulario redirije a /login -->
 		<input type="hidden" name="_target_path" value="/login" />
 	</form>
 </div>
