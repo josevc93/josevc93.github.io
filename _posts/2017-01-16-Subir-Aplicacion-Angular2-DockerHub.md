@@ -10,6 +10,29 @@ title: Subir aplicación Angular 2 a Docker Hub.
 
 La idea detrás de [Docker](https://www.docker.com/) es crear contenedores ligeros y portables para las aplicaciones software que puedan ejecutarse en cualquier máquina con Docker instalado, independientemente del sistema operativo que la máquina tenga por debajo, facilitando así también los despliegues.
 
+## Instalación
+
+En primer lugar es necesario [instalar Docker](https://docs.docker.com/engine/installation/linux/ubuntu/#/install-docker).
+
+Algunos comandos útiles:
+
+```
+# Comprobamos que se está ejecutando
+sudo service docker status
+
+# Vemos que versión estamos trabajando
+docker --version
+
+# Lista de comandos
+docker
+
+# Información del sistema
+docker info
+
+# Descarga y ejecución de un contenedor básico
+docker run hello-world
+```
+
 ## Docker Hub
 
 Vamos a crear una cuenta en Docker Hub para subir ahí el contenedor que vamos a crear. Por lo tanto el primer paso es entrar [aquí](https://hub.docker.com/).
