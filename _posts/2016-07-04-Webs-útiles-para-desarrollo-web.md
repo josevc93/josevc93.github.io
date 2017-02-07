@@ -80,7 +80,7 @@ Permite probar tus aplicaciones web en las principales resoluciones de los dispo
  
  ¿Utilizas bien CSS?
  
-< http://jigsaw.w3.org/css-validator/>
+ <http://jigsaw.w3.org/css-validator/>
  
  
  ¿Utilizas alguna otra? ¡Compártela!
