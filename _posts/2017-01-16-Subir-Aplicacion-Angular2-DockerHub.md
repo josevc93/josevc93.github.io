@@ -80,7 +80,7 @@ Para ver que se ha creado la imagen se puede ejecutar lo siguiente:
 Docker images
 ```
 
-Si se ha añadido bien, se ejecuta el siguiente comando para subir la imagen al repositorio:
+Si se ha creado bien, se ejecuta el siguiente comando para subir la imagen al repositorio:
 
 ```
 docker push usuarioDocker/nombreRepositorio
