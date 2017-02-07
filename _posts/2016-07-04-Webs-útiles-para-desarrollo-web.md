@@ -64,19 +64,19 @@ Permite probar tus aplicaciones web en las principales resoluciones de los dispo
  
  <https://pixabay.com/>
  
- ## Validar accesibilidad
+## Validar accesibilidad
  
  Aquí podrás comprobar si tu sitio web es accesible.
  
  <http://achecker.ca/checker/>
  
- ## Validar HTML5
+## Validar HTML5
  
  ¿Sigues las buenas prácticas de HTML5?
  
  <http://validator.w3.org/#validate_by_upload>
  
- ## Validar CSS
+## Validar CSS
  
  ¿Utilizas bien CSS?
  
