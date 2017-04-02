@@ -82,5 +82,16 @@ Permite probar tus aplicaciones web en las principales resoluciones de los dispo
  
  <http://jigsaw.w3.org/css-validator/>
  
+## GTmetrix 
+ 
+Gtmetrix realiza un completo análisis de eficiencia de una web y valora el grado de optimización de la misma dentro de una escala.
+ 
+<https://gtmetrix.com/>
+
+## TAW
+
+TAW es una familia de herramientas para el análisis automático de accesibilidad en sitios web.
+
+<http://www.tawdis.net/>
  
  ¿Utilizas alguna otra? ¡Compártela!
