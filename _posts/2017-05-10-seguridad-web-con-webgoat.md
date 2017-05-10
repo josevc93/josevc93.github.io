@@ -11,7 +11,7 @@ En este artículo se va a hablar sobre [WebGoat](https://www.owasp.org/index.php
 
 ## WebGoat
 
-El primer paso es descargar WebGoat desde este [enlace](https://github.com/WebGoat/WebGoat/releases). Una vez descargado se ejecutará como "java -jar nombre" y podremos acceder desde nuestro navegador en la ruta http://localhost:8080/WebGoat/.
+El primer paso es descargar WebGoat desde este [enlace](https://github.com/WebGoat/WebGoat/releases). Una vez descargado se ejecutará mediante "java -jar nombre" y ya podemos acceder a la aplicacin desde nuestro navegador en la ruta http://localhost:8080/WebGoat/.
 
 ![WebGoat01]({{ site.baseurl }}/images/webgoat01.jpg "WebGoat")
 
@@ -34,5 +34,7 @@ SELECT * FROM user_data WHERE last_name = 'Jose' OR '1'='1'
 Por lo tanto, como 1 siempre es igual a 1, mostrará todos los usuarios.
 
 ![WebGoat05]({{ site.baseurl }}/images/webgoat05.jpg "WebGoat")
+
+Este es solo un ejemplo de todos los que esta herramienta ofrece, en otros ejemplo se puede modificar nuestro propio salario, enviar una imagen con código malicioso, comprar a un precio menor del que deberíamos pagar, subir y ejecutar código malicioso en un campo de imagen, etc...
 
 Espero que esta información te haya sido de utilidad, y que practiques con todos los ataques que esta herramienta te ofrece.
