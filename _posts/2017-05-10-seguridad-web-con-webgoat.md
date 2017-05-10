@@ -11,7 +11,7 @@ En este artículo se va a hablar sobre [WebGoat](https://www.owasp.org/index.php
 
 ## WebGoat
 
-El primer paso es descargar WebGoat desde este [enlace])(https://github.com/WebGoat/WebGoat/releases). Una vez descargado se ejecutará como "java -jar nombre" y podremos acceder desde nuestro navegador en la ruta http://localhost:8080/WebGoat/.
+El primer paso es descargar WebGoat desde este [enlace](https://github.com/WebGoat/WebGoat/releases). Una vez descargado se ejecutará como "java -jar nombre" y podremos acceder desde nuestro navegador en la ruta http://localhost:8080/WebGoat/.
 
 ![WebGoat01]({{ site.baseurl }}/images/webgoat01.jpg "WebGoat")
 
