@@ -35,6 +35,6 @@ Por lo tanto, como 1 siempre es igual a 1, mostrará todos los usuarios.
 
 ![WebGoat05]({{ site.baseurl }}/images/webgoat05.jpg "WebGoat")
 
-Este es solo un ejemplo de todos los que esta herramienta ofrece, en otros ejemplo se puede modificar nuestro propio salario, enviar una imagen con código malicioso, comprar a un precio menor del que deberíamos pagar, subir y ejecutar código malicioso en un campo de imagen, etc...
+Este es solo un ejemplo de todos los que esta herramienta ofrece, en otros ejemplos se puede modificar nuestro propio salario, enviar una imagen con código malicioso, comprar a un precio menor del que deberíamos pagar, subir y ejecutar código malicioso en un campo de imagen, etc...
 
 Espero que esta información te haya sido de utilidad, y que practiques con todos los ataques que esta herramienta te ofrece.
