@@ -17,7 +17,6 @@ En primer lugar accedemos a este [enlace](https://www.dropbox.com/developers/app
 
 Una vez creado ya podemos generar el token, que necesitaremos más adelante.
 
-
 ![img02]({{ site.baseurl }}/images/pythonDropbox02.jpg "img02")
 
 ## Python
@@ -27,7 +26,7 @@ import dropbox
 import tempfile
 
 #Autenticación
-token = "Lj_p_9vyaP8AAAAAAAAN4hgZ0OkBTXBucFGfpyV3S-VjtwR42GnM2OzXbs086yDt"
+token = "INTRODUCIR TOKEN GENERADO"
 dbx = dropbox.Dropbox(token)
 
 #Obtiene y muestra la información del usuario
@@ -35,11 +34,10 @@ user = dbx.users_get_current_account()
 print(user)
 
 #Sube archivo
-with open("/home/jose/Escritorio/practicaSD/muestra.txt", "rb") as f:
-   dbx.files_upload(f.read(), '/andres.txt', mute = True)
+with open("ruta/nombre.txt", "rb") as f:
+   dbx.files_upload(f.read(), '/nombre.txt', mute = True)
 
 #Descarga archivo
-dbx.files_download_to_file("/home/jose/Escritorio/practicaSD/jose.txt", '/andres.txt')
+dbx.files_download_to_file("ruta/nombre.txt", '/nombre.txt')
 ```
-
 
