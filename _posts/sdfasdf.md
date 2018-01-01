@@ -7,15 +7,25 @@ categories:
 title: Configurar un dominio con GitHub y Jekyll 
 ---
 
+Subir a producción nuestro proyecto con Symfony3 y Angular (utilizando [Angular CLI](https://cli.angular.io/)) es muy sencillo utilizando un hosting compartido.
+
 Es muy sencillo configurar nuestro propio dominio en GitHub, para obtener *www.miDominio.com* en lugar de *username.github.io*.
 
-## Comprar un dominio
+## Symfony
 
-En primer lugar, es necesario comprar un dominio. Yo lo he comprado en [1&1](https://www.1and1.es/ "www.1and1.es"), ya que el precio no es muy elevado (0,99€ el primer año, y 9,99€ los siguientes).
+Únicamente es necesario eliminar los directorios *var/cache* y *var/logs*.
 
-Si te decides por esta web, únicamente debes de comprobar si el dominio que buscas está disponible e introducir tus datos.
+## Angular
 
-## Configurar el dominio
+Hay que ejecutar el comando *ng build --prod*. Esto generará un directorio */dist* con el contenido que hay que subir al hosting.
+
+## Subir archivos y .htaccess
+
+Hay que subir todos los ficheros de Symfony, y el directorio */dist* de Angular al hosting. Para ello una buena opción es utilizar [Filezilla](https://filezilla-project.org/).
+
+Este es el contenido del directorio /public_html en el hosting que he contratado:
+
+
 
 Una vez comprado se te enviará un correo con tu ID de cliente (puede tardar unos minutos). Con esto puedes acceder al área de clientes, aunque también puedes acceder introduciendo tu dominio.
 
