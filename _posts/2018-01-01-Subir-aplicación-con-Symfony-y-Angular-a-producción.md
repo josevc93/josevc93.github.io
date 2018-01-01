@@ -16,7 +16,7 @@ Subir a producción nuestro proyecto con Symfony3 y Angular (utilizando [Angular
 
 ## Angular
 
-Hay que ejecutar el comando *ng build --prod*. Esto generará un directorio */dist* con el contenido que hay que subir al hosting.
+Hay que ejecutar el comando *ng build - -prod*. Esto generará un directorio */dist* con el contenido que hay que subir al hosting.
 
 ## Subir archivos y .htaccess
 
