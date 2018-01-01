@@ -1,17 +1,16 @@
 ---
 tags:
-- GitHub
-- Jekyll
+- Symfony
+- Angular
+- Producción
 categories:
-- GitHub
-title: Configurar un dominio con GitHub y Jekyll 
+- Producción
+title: Subir aplicación con Symfony3 y Angular a un hosting compartido.
 ---
 
 Subir a producción nuestro proyecto con Symfony3 y Angular (utilizando [Angular CLI](https://cli.angular.io/)) es muy sencillo utilizando un hosting compartido.
 
-Es muy sencillo configurar nuestro propio dominio en GitHub, para obtener *www.miDominio.com* en lugar de *username.github.io*.
-
-## Symfony
+## Symfony3
 
 Únicamente es necesario eliminar los directorios *var/cache* y *var/logs*.
 
@@ -33,4 +32,17 @@ Estos archivos son los generados por Angular, y además se incluye un directorio
 
 Una vez que está todo subido es importante añadir un archivo **.htaccess** para evitar errores en la aplicación. En caso de no añadirlo la aplicación no cargaría al recargar la página.
 
+```yml
+ RewriteEngine On 
+ RewriteCond %{SERVER_PORT} 80 
+ RewriteRule ^(.*)$ RUTA/$1 [R,L] 
 
+ Options -MultiViews
+ #RewriteEngine On
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteRule ^ index.html [QSA,L]
+```
+
+**¡Importante!** Cambiar *RUTA* por la dirección de tu web.
+
+Con esto ya tenemos la aplicación funcionando correctamente. 
